@@ -554,8 +554,33 @@ video {
   --tw-contain-style:  ;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+.m-5 {
+  margin: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.font-lobstertwo {
+  font-family: Lobster Two, sans-serif;
 }
 
 .text-3xl {
@@ -571,6 +596,12 @@ video {
   font-weight: 800;
 }
 
-.underline {
-  text-decoration-line: underline;
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-olive-green {
+  --tw-text-opacity: 1;
+  color: rgb(97 141 61 / var(--tw-text-opacity));
 }
