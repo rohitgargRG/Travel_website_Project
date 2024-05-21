@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         'olive-green': '#618D3D',
       },
+      backgroundImage: theme =>({
+        'breakSec' : "url('/media/breakBGIMG.jpg')",
+      }),
     },
   },
   plugins: [],
