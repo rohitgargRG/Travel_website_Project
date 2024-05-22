@@ -7,7 +7,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build directories
-dist/
 build/
 
 # Tailwind config file if you don't want to share it
