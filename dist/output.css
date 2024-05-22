@@ -558,12 +558,20 @@ video {
   position: static;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-\[5\%\] {
+  margin: 5%;
 }
 
 .mx-\[10\%\] {
@@ -595,12 +603,24 @@ video {
   margin-top: 3rem;
 }
 
+.mr-\[20\%\] {
+  margin-right: 20%;
+}
+
+.mr-\[100px\] {
+  margin-right: 100px;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-12 {
@@ -619,6 +639,14 @@ video {
   height: 200px;
 }
 
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[1\%\] {
+  height: 1%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -635,6 +663,14 @@ video {
   width: 70%;
 }
 
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -643,12 +679,12 @@ video {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -717,6 +753,18 @@ video {
   background-position: center;
 }
 
+.p-\[100\%\] {
+  padding: 100%;
+}
+
+.p-\[10\%\] {
+  padding: 10%;
+}
+
+.p-\[20\%\] {
+  padding: 20%;
+}
+
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -727,12 +775,53 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pl-\[5\%\] {
-  padding-left: 5%;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pb-\[5\%\] {
+  padding-bottom: 5%;
+}
+
+.pt-\[5\%\] {
+  padding-top: 5%;
+}
+
+.pr-\[\] {
+  padding-right: ;
 }
 
 .pr-\[5\%\] {
   padding-right: 5%;
+}
+
+.pr-\[10\%\] {
+  padding-right: 10%;
+}
+
+.pr-\[100\%\] {
+  padding-right: 100%;
+}
+
+.pl-\[100\%\] {
+  padding-left: 100%;
+}
+
+.pr-\[20\%\] {
+  padding-right: 20%;
+}
+
+.pr-\[100\] {
+  padding-right: 100;
+}
+
+.pr-\[100px\] {
+  padding-right: 100px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-lobstertwo {
@@ -787,4 +876,22 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:pt-\[1px\] {
+    padding-top: 1px;
+  }
 }
