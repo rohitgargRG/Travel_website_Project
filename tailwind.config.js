@@ -10,11 +10,12 @@ module.exports = {
         'olive-green': '#618D3D',
         'olive-green-light': '#89ba60',
       },
-      backgroundImage: theme =>({
-        'breakSec' : "url('/media/breakBGIMG.jpg')",
-      }),
+      // backgroundImage: theme =>({
+      //   'breakSec' : "url('/media/breakBGIMG.jpg')",
+      // }),
       
       backgroundImage: {
+        'breakSec' : "url('/media/breakBGIMG.jpg')",
         'bandar' : "url('/media/bandar.jpg')",
         'phuket' : "url('/media/phuket.jpg')",
         'goa': "url('/media/goa.jpg')",
