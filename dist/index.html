@@ -9,30 +9,36 @@
     <!-- navbar fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <!-- nav starts -->
     <section class="bg-breakSec bg-cover bg-center min-h-screen">
 
-   
-    <nav class="bg-transparent static">
-        <div class="flex flex-row justify-center items-center font-bold text-olive-green font-lobstertwo">
-            <div  class="m-5"><a href="#">About</a></div>
-            <div class="m-5"><a href="#">Season</a></div>
-            <div class="m-5"><a href="#">Destination</a></div>
-            <div class="m-5"><a href="#">Package</a></div>
-            <div class="m-5 text-3xl font-extrabold text-black"><a href="#">Had Travel</a></div>
-            <div class="m-5"><a href="#">Service</a></div>
-            <div class="m-5"><a href="#">Gallery</a></div>
-            <div class="m-5"><a href="#">Review</a></div>
-            <div class="m-5"><a href="#">Merchandise</a></div>
-        </div>
-    </nav>
+        <nav class="bg-transparent static text-center">
+        <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
+            <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5" id="burger"><a
+                    href="#">Had
+                    Travel</a></div>
+            <ul class="font-bold text-olive-green font-lobstertwo hidden lg:flex justify-center items-center" id="nav">
+                <li class="m-5"><a href="#">About</a></li>
+                <li class="m-5"><a href="#">Season</a></li>
+                <li class="m-5"><a href="#">Destination</a></li>
+                <li class="m-5"><a href="#">Package</a></li>
+                <div class="w-40"></div>
+                <li class="m-5"><a href="#">Service</a></li>
+                <li class="m-5"><a href="#">Gallery</a></li>
+                <li class="m-5"><a href="#">Review</a></li>
+                <li class="m-5"><a href="#">Merchandise</a></li>
+            </ul>
+           </div>
+        </nav>
     <!-- nav ends -->
 
     <!-- Break Your Experience Setion starts here -->
-    <section class="h-[680px] font-lobstertwo relative ">
+    <section class="h-[100vh] font-lobstertwo relative"> <!--height changed to 100vh-->
         <div class="ml-24 h-[100%] w-[70%]  flex flex-col  justify-center ">
             <div class="text-[60px] font-semibold ml-20">Break Your Experience!</div>
             
@@ -43,8 +49,116 @@
     </section>
 
     <!-- Break Your Experience Section Ends here -->
+    </section>
+
+    <!--Expand your experience sections STARTS-->
+
+    <div class="mx-[10%] flex flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
+        <div>
+            <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
+            <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
+            <div class="mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati a omnis repellat perspiciatis nam aliquid
+                quis. Sapiente consectetur illo, eius quis amet, laudantium atque, alias dolorum rerum nam quam quisquam reprehenderit.
+                Unde quia voluptas laborum mollitia rerum sed delectus nemo officiis neque cupiditate voluptatum earum, possimus et vel
+                eos.
+            </div>
+            <div class="flex">
+                <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green ">
+                    Let's Expand!
+                </div>
+            </div>
+        </div>
+        <div class="m-[5%] pb-[5%] w-[75%] lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
+            <div>
+                <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
+            </div>
+            <div>
+                <img src="./img/img2.jpg" alt="Img2" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+            </div>
+            <div>
+                <img src="./img/img3.jpg" alt="Img3" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+            </div>
+            <div>
+                <img src="./img/img4.jpg" alt="Img4" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
+            </div>
+        </div>
+    </div>
+
+    <!-- lets go sections starts -->
 
 
-</section>
+    <!-- lets go section ends -->
+
+    <!-- explore section starts -->
+    <section class="h-[100vh] font-lobstertwo ">
+        <div class="ml-4 sm:ml-10 md:ml-20 lg:ml-40 h-full w-full md:w-[70%] flex flex-col justify-center">
+            <!-- text container -->
+            <div class="text-center md:text-left">
+                <div class="text-3xl md:text-5xl text-olive-green">Explore the beautiful destination</div>
+                <div class="text-xl md:text-3xl">Like your dream</div>
+            </div>
+            <!-- cards and arrow container -->
+            <div class="mt-6">
+                <!-- card container -->
+                <div class="flex flex-wrap gap-8 md:gap-10 lg:gap-20 justify-center items-center relative overflow-hidden">
+                    <!-- card 1 -->
+                    <div class="w-40 sm:w-48 md:w-60 h-60 sm:h-72 md:h-80 rounded-lg bg-bandar group relative overflow-hidden">
+                        <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+                            <!-- address div -->
+                            <div class="m-4 h-[100px] sm:h-[140px] md:h-[160px]">
+                                <p class="text-white text-xl sm:text-2xl">Bandar Lampung</p>
+                                <p class="text-white">Indonesia</p>
+                            </div>
+                            <!-- rating div -->
+                            <div class="flex flex-row justify-end">
+                                <img class="mr-2 mb-2" src="../media/star rating.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="w-40 sm:w-48 md:w-60 h-60 sm:h-72 md:h-80 rounded-lg bg-phuket group relative overflow-hidden">
+                        <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+                            <!-- address div -->
+                            <div class="m-4 h-[100px] sm:h-[140px] md:h-[160px]">
+                                <p class="text-white text-xl sm:text-2xl">Phuket</p>
+                                <p class="text-white">Thailand</p>
+                            </div>
+                            <!-- rating div -->
+                            <div class="flex flex-row justify-end">
+                                <img class="mr-2 mb-2" src="../media/star rating.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="w-40 sm:w-48 md:w-60 h-60 sm:h-72 md:h-80 rounded-lg bg-goa group relative overflow-hidden">
+                        <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+                            <!-- address div -->
+                            <div class="m-4 h-[100px] sm:h-[140px] md:h-[160px]">
+                                <p class="text-white text-xl sm:text-2xl">Goa</p>
+                                <p class="text-white">India</p>
+                            </div>
+                            <!-- rating div -->
+                            <div class="flex flex-row justify-end">
+                                <button id="down-scroll-btn"> <!-- this button is not functional as of now -->
+                                    <img class="mr-2 mb-2" src="../media/star rating.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- arrow container -->
+                <div class="flex justify-center items-center mt-12">
+                    <img src="../media/down-arrow.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Expand your experience sections ENDS-->
+    <script src="index.js"></script>
+
+
 </body>
 </html>
