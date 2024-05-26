@@ -20,9 +20,10 @@ module.exports = {
         'phuket' : "url('/media/phuket.jpg')",
         'goa': "url('/media/goa.jpg')",
         'package1' : "url('/media/p1.jpg')",
-        'package2' : "url('/media/p2.jpg')",
+        'package2' : "url('/media/p_2.jpeg')",
         'package3' : "url('/media/p3.jpg')",
         'package4' : "url('/media/p4.jpg')",
+        '5_Star_black' : "url('/media/5-stars_black.png')",
       }
     }
   },

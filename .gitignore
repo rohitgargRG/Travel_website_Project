@@ -1,16 +1,13 @@
 # Node modules
 *node_modules/*
 
+dist/output.css
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
-=======
-# Build directories
-build/
->>>>>>> 02eb92a67caf88fd817344204ac147c1755437ef
 
 # Tailwind config file if you don't want to share it
 # Uncomment the next line if you don't want to include it in your repo
