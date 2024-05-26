@@ -19,8 +19,12 @@ module.exports = {
         'bandar' : "url('/media/bandar.jpg')",
         'phuket' : "url('/media/phuket.jpg')",
         'goa': "url('/media/goa.jpg')",
-      },
-    },
+        'package1' : "url('/media/p1.jpg')",
+        'package2' : "url('/media/p2.jpg')",
+        'package3' : "url('/media/p3.jpg')",
+        'package4' : "url('/media/p4.jpg')",
+      }
+    }
   },
   plugins: [],
 }
