@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.lesGoCard{
+    @apply w-[100px] flex justify-center
+}
+.outer{
+    @apply w-[200px] h-[200px] bg-white rounded-[20px] flex justify-center items-center flex-wrap m-[20px] lg:m-[0px]
+}

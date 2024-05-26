@@ -19,6 +19,7 @@ module.exports = {
         'bandar' : "url('/media/bandar.jpg')",
         'phuket' : "url('/media/phuket.jpg')",
         'goa': "url('/media/goa.jpg')",
+        'lesGo':"url('/media/lesGo.jpg')"
       },
     },
   },
