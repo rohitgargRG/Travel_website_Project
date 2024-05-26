@@ -665,6 +665,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -675,18 +679,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .flex {
@@ -729,10 +721,6 @@ video {
   height: 170vh;
 }
 
-.h-\[190vh\] {
-  height: 190vh;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -757,16 +745,20 @@ video {
   height: 800px;
 }
 
-.h-\[930px\] {
-  height: 930px;
+.h-auto {
+  height: auto;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
+.h-\[190vh\] {
+  height: 190vh;
+}
+
+.h-\[1600px\] {
+  height: 1600px;
 }
 
 .min-h-screen {
@@ -779,6 +771,10 @@ video {
 
 .w-\[120px\] {
   width: 120px;
+}
+
+.w-\[130px\] {
+  width: 130px;
 }
 
 .w-\[40\%\] {
@@ -805,12 +801,16 @@ video {
   width: 100%;
 }
 
-.w-\[125px\] {
-  width: 125px;
+.w-\[\] {
+  width: ;
 }
 
-.w-\[130px\] {
-  width: 130px;
+.w-\[1-0\] {
+  width: 1-0;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -918,28 +918,9 @@ video {
   border-width: 1px;
 }
 
-.border-solid {
-  border-style: solid;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .border-olive-green {
   --tw-border-opacity: 1;
   border-color: rgb(97 141 61 / var(--tw-border-opacity));
-}
-
-.border-pink-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(236 72 153 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -992,12 +973,12 @@ video {
   background-image: url('/media/p3.jpg');
 }
 
-.bg-phuket {
-  background-image: url('/media/phuket.jpg');
-}
-
 .bg-package4 {
   background-image: url('/media/p4.jpg');
+}
+
+.bg-phuket {
+  background-image: url('/media/phuket.jpg');
 }
 
 .bg-cover {
@@ -1235,6 +1216,26 @@ video {
     height: 160px;
   }
 
+  .lg\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[800\] {
+    height: 800;
+  }
+
+  .lg\:h-\[100\] {
+    height: 100;
+  }
+
+  .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .lg\:w-60 {
     width: 15rem;
   }
@@ -1245,6 +1246,10 @@ video {
 
   .lg\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:flex-nowrap {
