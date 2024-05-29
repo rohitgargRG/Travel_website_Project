@@ -588,8 +588,8 @@ video {
   }
 }
 
-.static {
-  position: static;
+.fixed {
+  position: fixed;
 }
 
 .absolute {
@@ -681,6 +681,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
+}
+
+.mr-52 {
+  margin-right: 13rem;
+}
+
 .flex {
   display: flex;
 }
@@ -717,8 +729,16 @@ video {
   height: 100vh;
 }
 
+.h-\[1600px\] {
+  height: 1600px;
+}
+
 .h-\[170vh\] {
   height: 170vh;
+}
+
+.h-\[190vh\] {
+  height: 190vh;
 }
 
 .h-\[200px\] {
@@ -741,10 +761,6 @@ video {
   height: 80%;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-auto {
   height: auto;
 }
@@ -753,20 +769,16 @@ video {
   height: 100%;
 }
 
-.h-\[190vh\] {
-  height: 190vh;
-}
-
-.h-\[1600px\] {
-  height: 1600px;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-40 {
   width: 10rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-\[120px\] {
@@ -801,16 +813,16 @@ video {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[\] {
   width: ;
 }
 
-.w-\[1-0\] {
-  width: 1-0;
-}
-
-.w-\[100\%\] {
-  width: 100%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .cursor-pointer {
@@ -849,6 +861,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -859,6 +875,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-5 {
@@ -912,10 +932,6 @@ video {
 
 .border-4 {
   border-width: 4px;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-olive-green {
@@ -1208,32 +1224,16 @@ video {
     height: 20rem;
   }
 
+  .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .lg\:h-\[100vh\] {
     height: 100vh;
   }
 
   .lg\:h-\[160px\] {
     height: 160px;
-  }
-
-  .lg\:h-\[800px\] {
-    height: 800px;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
-  }
-
-  .lg\:h-\[800\] {
-    height: 800;
-  }
-
-  .lg\:h-\[100\] {
-    height: 100;
-  }
-
-  .lg\:h-\[1000px\] {
-    height: 1000px;
   }
 
   .lg\:w-60 {
@@ -1244,12 +1244,12 @@ video {
     width: 100%;
   }
 
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
   .lg\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
 
   .lg\:flex-nowrap {
