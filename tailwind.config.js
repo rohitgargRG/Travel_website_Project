@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lobstertwo: ['Lobster Two', 'sans-serif'],
+        vollkorn: ['Vollkorn', 'serif'],
       },
       colors: {
         'olive-green': '#618D3D',
@@ -25,6 +26,7 @@ module.exports = {
         'package4' : "url('/media/p4.jpg')",
         '5_Star_black' : "url('/media/5-stars_black.png')",
         'forest' : "url('/media/forest.jpg')",
+        'trees' : "url('/media/tree.jpg')",
       }
     }
   },
