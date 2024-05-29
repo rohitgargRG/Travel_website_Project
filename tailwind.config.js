@@ -24,6 +24,7 @@ module.exports = {
         'package3' : "url('/media/p3.jpg')",
         'package4' : "url('/media/p4.jpg')",
         '5_Star_black' : "url('/media/5-stars_black.png')",
+        'forest' : "url('/media/forest.jpg')",
       }
     }
   },
