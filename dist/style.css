@@ -8,3 +8,18 @@
 .outer{
     @apply w-[200px] h-[200px] bg-white rounded-[20px] flex justify-center items-center flex-wrap m-[20px] lg:m-[0px]
 }
+.outer-review-card {
+    @apply max-w-[300px] w-[100%] h-[400px] bg-white rounded-[20px] overflow-hidden my-[7%] md:m-[5%%]
+}
+
+.upper-card {
+    @apply h-[36%] w-[100%] bg-cover bg-center relative mb-[10px]
+}
+
+.white {
+    @apply bg-white h-[60px] w-[60px] rounded-[50%] absolute top-[77%] left-[38%]
+}
+
+.profile {
+    @apply absolute w-[50px] top-[80%] left-[40%] bg-white rounded-[50%]
+}
