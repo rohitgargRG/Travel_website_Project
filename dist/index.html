@@ -60,7 +60,7 @@
 
     <!--Expand your experience sections STARTS-->
 
-    <div class="mx-[10%] flex flex-wrap lg:flex-nowrap justify-center items-center h-[170vh] lg:h-[100vh]">
+    <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
         <div>
             <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
             <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-[5%] pb-[5%] w-[75%] lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
+        <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
             <div>
                 <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
             </div>
@@ -96,7 +96,7 @@
 
     <!-- lets go sections starts -->
 
-    <section class="bg-lesGo h-[190vh] lg:h-[100vh] bg-cover bg-center bg-opacity-10">
+    <section class="bg-lesGo min-h-[100vh] bg-cover bg-center bg-opacity-10">
     
         <div class="px-[12%] py-[2%]">
             <!--Lets's Go Text-->
@@ -108,8 +108,8 @@
             </div>
     
             <!--season Card-->
-            <div class="p-[5%] content-center">
-                <div class="flex flex-wrap bechme justify-between">
+            <div class="p-[5%] flex justify-center">
+                <div class="flex flex-col gap-[5px] md:gap-[50px] md:flex-wrap md:flex-row bechme justify-between">
                     <div class="outer">
                         <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="#618d3d"
@@ -408,13 +408,70 @@
     </section>
     <!-- Service section ends here -->
 
-    <!-- some other section -->
-    <section class="h-[100vh]">
-        <div class="flex items-center justify-center">
-            Some other section
+    <!-- review starts -->
+    <section class="bg-review bg-cover bg-center">
+        <div class=" p-[5%] flex flex-col items-center">
+            <div class="text-review-green pb-[5%]">
+                <p class="font-lobstertwo font-semibold text-5xl">Reviews</p>
+                <p class="text-2xl">They said about us</p>
+            </div>
+    
+            <!--Cards-->
+            <div class="flex flex-col flex-wrap md:flex-row gap-[10px] md:gap-[50px] justify-between md:flex-wrap">
+                <!--Card 1 -->
+                <div class="outer-review-card">
+                    <div class="bg-reviewUpper1 upper-card">
+                        <div class="white"></div>
+                        <div class="profile">
+                            <img src="/media/profile2.png" width="50px">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-[5%]">
+                        <h2 class="font-lobstertwo font-semibold text-2xl">Sanchit Pahurkar</h2>
+                        <span class="pt-[2%]"><img class="mr-2 mb-2" src="../media/stars.png" alt=""></span>
+                        <p class="px-[5%] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            dolores vitae nihil odit fuga facilis, molestias
+                            dolor, eum provident rem sunt earum, labore iste neque.</p>
+                    </div>
+                </div>
+                <!--Card 2 -->
+                <div class="outer-review-card">
+                    <div class="bg-reviewUpper2 upper-card">
+                        <div class="white"></div>
+                        <div class="profile">
+                            <img src="/media/profile1.png" width="50px">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-[5%]">
+                        <h2 class="font-lobstertwo font-semibold text-2xl">Rohit Garg</h2>
+                        <span class="pt-[2%]"><img class="mr-2 mb-2" src="../media/stars.png" alt=""></span>
+                        <p class="px-[5%] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            dolores vitae nihil
+                            odit fuga facilis, molestias
+                            dolor, eum provident rem sunt earum, labore iste neque.</p>
+                    </div>
+                </div>
+                <!--Card 3 -->
+                <div class="outer-review-card">
+                    <div class="bg-reviewUpper3 upper-card">
+                        <div class="white"></div>
+                        <div class="profile">
+                            <img src="/media/profile1.png" width="50px">
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center p-[5%]">
+                        <h2 class="font-lobstertwo font-semibold text-2xl">Tanmay Talekar</h2>
+                        <span class="pt-[2%]"><img class="mr-2 mb-2" src="../media/stars.png" alt=""></span>
+                        <p class="px-[5%] text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                            dolores vitae nihil
+                            odit fuga facilis, molestias
+                            dolor, eum provident rem sunt earum, labore iste neque.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- some other section ends -->
+    <!-- review ends -->
 
 
 
