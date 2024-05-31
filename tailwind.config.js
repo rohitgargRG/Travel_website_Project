@@ -40,6 +40,7 @@ module.exports = {
         gallery5: "url('/media/gallery5.jpg')",
         gallery6: "url('/media/gallery6.jpg')",
         gallery7: "url('/media/gallery7.jpg')",
+        'productbg':"url('/media/productbg.png)"
       },
     },
   },
