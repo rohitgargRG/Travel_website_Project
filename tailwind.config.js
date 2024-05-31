@@ -11,6 +11,7 @@ module.exports = {
         "olive-green": "#618D3D",
         "olive-green-light": "#89ba60",
         "review-green": "#CEBA5A",
+        "glassMorphism-nav": "rgba(255, 255, 255, 0.1);",
       },
       // backgroundImage: theme =>({
       //   'breakSec' : "url('/media/breakBGIMG.jpg')",
@@ -40,7 +41,7 @@ module.exports = {
         gallery5: "url('/media/gallery5.jpg')",
         gallery6: "url('/media/gallery6.jpg')",
         gallery7: "url('/media/gallery7.jpg')",
-        'productbg':"url('/media/productbg.png)"
+        productbg: "url('/media/productbg.png)",
       },
     },
   },

@@ -24,28 +24,29 @@
     <!-- nav starts -->
     <section class="bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
 
-        <nav class="bg-transparent fixed text-center w-full flex  justify-center">
-        <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
-            <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5" id="burger"><a
-                    href="#">Had
-                    Travel</a></div>
-            <ul class="font-bold text-olive-green font-lobstertwo hidden lg:flex justify-center items-center" id="nav">
-                <li class="m-5"><a href="#">About</a></li>
-                <li class="m-5"><a href="#">Season</a></li>
-                <li class="m-5"><a href="#">Destination</a></li>
-                <li class="m-5"><a href="#">Package</a></li>
-                <div class="w-40"></div>
-                <li class="m-5"><a href="#">Service</a></li>
-                <li class="m-5"><a href="#">Gallery</a></li>
-                <li class="m-5"><a href="#">Review</a></li>
-                <li class="m-5"><a href="#">Merchandise</a></li>
-            </ul>
-           </div>
+        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50">
+            <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
+                <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5"
+                    id="burger">
+                    <p>Had Travel</p>
+                </div>
+                <ul class="font-bold text-olive-green font-lobstertwo hidden lg:flex justify-center items-center" id="nav">
+                    <li class="m-5"><a href="#about">About</a></li>
+                    <li class="m-5"><a href="#season">Season</a></li>
+                    <li class="m-5"><a href="#destination">Destination</a></li>
+                    <li class="m-5"><a href="#package">Package</a></li>
+                    <div class="w-40"></div>
+                    <li class="m-5"><a href="#services">Service</a></li>
+                    <li class="m-5"><a href="#gallery">Gallery</a></li>
+                    <li class="m-5"><a href="#reviews">Review</a></li>
+                    <li class="m-5"><a href="#merch">Merchandise</a></li>
+                </ul>
+            </div>
         </nav>
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
-    <section class=" h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]"> <!--height changed to 100vh-->
+    <section class=" h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]" id="home"> <!--height changed to 100vh-->
         <div class=" h-[100%] w-[80%]  flex flex-col justify-center ">
             <div class="text-[60px] font-semibold  w-full">Break Your Experience!</div>
             
@@ -60,43 +61,47 @@
 
     <!--Expand your experience sections STARTS-->
 
-    <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
-        <div>
-            <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
-            <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
-            <div class="mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati a omnis repellat perspiciatis nam aliquid
-                quis. Sapiente consectetur illo, eius quis amet, laudantium atque, alias dolorum rerum nam quam quisquam reprehenderit.
-                Unde quia voluptas laborum mollitia rerum sed delectus nemo officiis neque cupiditate voluptatum earum, possimus et vel
-                eos.
+    <section id="about">
+        <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
+            <div>
+                <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
+                <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
+                <div class="mb-10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati a omnis repellat perspiciatis
+                    nam aliquid
+                    quis. Sapiente consectetur illo, eius quis amet, laudantium atque, alias dolorum rerum nam quam quisquam
+                    reprehenderit.
+                    Unde quia voluptas laborum mollitia rerum sed delectus nemo officiis neque cupiditate voluptatum earum,
+                    possimus et vel
+                    eos.
+                </div>
+                <div class="flex">
+                    <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green ">
+                        Let's Expand!
+                    </div>
+                </div>
             </div>
-            <div class="flex">
-                <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green ">
-                    Let's Expand!
+            <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
+                <div>
+                    <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img2.jpg" alt="Img2" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img3.jpg" alt="Img3" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img4.jpg" alt="Img4" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
                 </div>
             </div>
         </div>
-        <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
-            <div>
-                <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
-            </div>
-            <div>
-                <img src="./img/img2.jpg" alt="Img2" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
-            </div>
-            <div>
-                <img src="./img/img3.jpg" alt="Img3" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
-            </div>
-            <div>
-                <img src="./img/img4.jpg" alt="Img4" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
-            </div>
-        </div>
-    </div>
     <!--Expand your experience sections ENDS-->
 
 
     <!-- lets go sections starts -->
 
-    <section class="bg-lesGo min-h-[100vh] bg-cover bg-center bg-opacity-10">
+    <section class="bg-lesGo min-h-[100vh] bg-cover bg-center bg-opacity-10" id="season">
     
         <div class="px-[12%] py-[2%]">
             <!--Lets's Go Text-->
@@ -152,7 +157,7 @@
     <!-- lets go section ends -->
 
     <!-- explore section starts -->
-    <section class="h-[100vh] font-lobstertwo ">
+    <section class="h-[100vh] font-lobstertwo " id="destination">
         <div class="ml-4 sm:ml-10  lg:ml-40 h-full w-full lg:w-[70%] flex flex-col justify-center">
             <!-- text container -->
             <div class="text-center lg:text-left">
@@ -219,7 +224,7 @@
     
     <!-- Our package Section starts here -->
 
-    <section class="h-auto ">
+    <section class="h-auto " id="package">
         <div class="h-full w-full">
             
             <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl">
@@ -325,7 +330,7 @@
     <!-- Our package Section Ends here -->
 
     <!-- Service Section Starts here -->
-    <section class="bg-forest bg-cover h-full">
+    <section class="bg-forest bg-cover h-full" id="services">
         <!-- component div -->
         <div class="py-5 flex flex-col items-center justify-center">
             <!-- title div -->
@@ -409,7 +414,7 @@
     <!-- Service section ends here -->
 
     <!-- Image gallery Section starts -->
-    <section class="min-h-screen w-full mt-10">
+    <section class="min-h-screen w-full mt-10" id="gallery">
         <div class="h-[100px]">
             <div class="text-4xl font-lobstertwo text-olive-green flex justify-start pl-32"><p>Our Memorials</p></div>
             <div class="text-3xl font-lobstertwo pl-32"><p>You are Cool, You are Amazing</p></div>
@@ -445,7 +450,7 @@
 
 
     <!-- review starts -->
-    <section class="bg-review bg-cover bg-center mt-8">
+    <section class="bg-review bg-cover bg-center mt-8" id="reviews">
         <div class=" p-[5%] flex flex-col items-center">
             <div class="text-review-green pb-[5%]">
                 <p class="font-lobstertwo font-semibold text-5xl">Reviews</p>
@@ -512,7 +517,7 @@
 
     <!-- Merch ends -->
 
-    <section class="h-[100vh]">
+    <section class="h-[100vh]" id="merch">
         <div class="p-[5%]">
             <!--Title-->
             <div class="text-center pb-[3%]">
