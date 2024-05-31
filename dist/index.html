@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +19,18 @@
 
     <!-- logo -->
     <link rel="shortcut icon" href="https://wheredowewander.com/wp-content/uploads/2023/04/WDWWlogo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="max-w-full">
     <!-- nav starts -->
     <section class="bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
 
-        <nav class="bg-transparent fixed text-center w-full flex  justify-center">
+        <nav class="bg-transparent fixed text-center w-full flex  justify-center navY">
         <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
-            <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5" id="burger"><a
-                    href="#">Had
-                    Travel</a></div>
+            <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5" id="burger">
+                <a href="#" id="text">Had Travel</a>
+            </div>
             <ul class="font-bold text-olive-green font-lobstertwo hidden lg:flex justify-center items-center" id="nav">
                 <li class="m-5"><a href="#">About</a></li>
                 <li class="m-5"><a href="#">Season</a></li>
@@ -45,13 +47,13 @@
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
-    <section class=" h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]"> <!--height changed to 100vh-->
+    <section class=" ExpT h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]"> <!--height changed to 100vh-->
         <div class=" h-[100%] w-[80%]  flex flex-col justify-center ">
-            <div class="text-[60px] font-semibold  w-full">Break Your Experience!</div>
+            <div class="text-[60px] font-semibold w-full breakT">Break Your Experience!</div>
             
-            <div class="font-medium ">Discover Unique Adventures and Gems Tailored Just for You.<br>Let Every Journey be Unforgettable!</div>
+            <div class="font-medium  ">Discover Unique Adventures and Gems Tailored Just for You.<br>Let Every Journey be Unforgettable!</div>
             
-            <div class="mt-12  rounded-3xl w-40 h-12 flex items-center justify-center text-white bg-olive-green text-lg font-semibold"><p><a href="#">Let's Explore -></a></p></div>
+            <div class="mt-12 rounded-3xl w-40 h-12 flex items-center justify-center text-white bg-olive-green text-lg font-semibold transition duration-400 ease-in-out transform hover:bg-white hover:text-olive-green"><p><a href="#">Let's Explore <i class="fa-solid fa-arrow-right"></i></a></p></div>
         </div>
     </section>
 
@@ -61,22 +63,19 @@
     <!--Expand your experience sections STARTS-->
 
     <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
-        <div>
+        <div class="ExpT">
             <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
             <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
             <div class="mb-10">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati a omnis repellat perspiciatis nam aliquid
-                quis. Sapiente consectetur illo, eius quis amet, laudantium atque, alias dolorum rerum nam quam quisquam reprehenderit.
-                Unde quia voluptas laborum mollitia rerum sed delectus nemo officiis neque cupiditate voluptatum earum, possimus et vel
-                eos.
+                Embark on an unforgettable journey and uncover the hidden gems of the world with our expertly crafted travel itineraries. Whether you're an adventurer, a culture enthusiast, or someone seeking tranquility, we have something special for everyone.
             </div>
             <div class="flex">
-                <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green ">
+                <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green transition duration-400 ease-in-out transform hover:bg-olive-green hover:text-white cursor-pointer">
                     Let's Expand!
                 </div>
             </div>
         </div>
-        <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
+        <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5 ExpR">
             <div>
                 <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
             </div>
@@ -100,7 +99,7 @@
     
         <div class="px-[12%] py-[2%]">
             <!--Lets's Go Text-->
-            <div>
+            <div class="letL">
                 <p class="font-lobstertwo font-semibold text-[3.5rem]">Let's Go!</p>
                 <p class="text-olive-green text-[2rem]">
                     Vacation with us <br> and get rid of your tiredness.
@@ -109,27 +108,27 @@
     
             <!--season Card-->
             <div class="p-[5%] flex justify-center">
-                <div class="flex flex-col gap-[5px] md:gap-[50px] md:flex-wrap md:flex-row bechme justify-between">
+                <div class="flex flex-col gap-[5px] md:gap-[50px] md:flex-wrap md:flex-row bechme justify-between letB">
                     <div class="outer">
-                        <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path fill="#618d3d"
+                        <svg class="lesGoCard hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#618d3d" 
                                 d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z" />
                         </svg>
                     </div>
                     <div class="outer">
-                        <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <svg class="lesGoCard hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path fill="#618d3d"
                                 d="M224 0c13.3 0 24 10.7 24 24V70.1l23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-57 57v76.5l66.2-38.2 20.9-77.8c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4L373 142.2l37.1-21.4c11.5-6.6 26.2-2.7 32.8 8.8s2.7 26.2-8.8 32.8L397 183.8l31.5 8.4c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-77.8-20.9L272 256l66.2 38.2 77.8-20.9c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4L397 328.2l37.1 21.4c11.5 6.6 15.4 21.3 8.8 32.8s-21.3 15.4-32.8 8.8L373 369.8l8.4 31.5c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-20.9-77.8L248 297.6v76.5l57 57c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-23-23V488c0 13.3-10.7 24-24 24s-24-10.7-24-24V441.9l-23 23c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l57-57V297.6l-66.2 38.2-20.9 77.8c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4L75 369.8 37.9 391.2c-11.5 6.6-26.2 2.7-32.8-8.8s-2.7-26.2 8.8-32.8L51 328.2l-31.5-8.4c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l77.8 20.9L176 256l-66.2-38.2L31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4L51 183.8 13.9 162.4c-11.5-6.6-15.4-21.3-8.8-32.8s21.3-15.4 32.8-8.8L75 142.2l-8.4-31.5c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l20.9 77.8L200 214.4V137.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23V24c0-13.3 10.7-24 24-24z" />
                         </svg>
                     </div>
                     <div class="outer">
-                        <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg class="lesGoCard hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="#618d3d"
                                 d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z" />
                         </svg>
                     </div>
                     <div class="outer">
-                        <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg class="lesGoCard hover:cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="#618d3d"
                                 d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z" />
                         </svg>
@@ -138,9 +137,9 @@
             </div>
     
             <!--Load More-->
-            <div class="flex justify-center px-[5%]">
-                <div class=" bg-olive-green rounded-full px-9 py-2 text-white ">
-                    Load More ->
+            <div class="flex justify-center px-[5%] letB">
+                <div class=" bg-olive-green rounded-full px-9 py-2 text-white transition duration-400 ease-in-out transform hover:bg-white hover:text-olive-green hover:cursor-pointer">
+                    Load More <i class="fa-solid fa-arrow-right"></i> 
                 </div>
             </div>
         </div>
@@ -222,11 +221,11 @@
     <section class="h-auto ">
         <div class="h-full w-full">
             
-            <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl">
+            <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl packB">
                 <p>Our Package</p>
             </div>
             
-            <div class="h-[5%]  flex items-start justify-center font-lobstertwo text-olive-green text-2xl tracking-widest">
+            <div class="h-[5%]  flex items-start justify-center font-lobstertwo text-olive-green text-2xl tracking-widest packB">
                 <P>Set your package to explore around the world!</P>
             </div>
             
@@ -235,7 +234,7 @@
 
 
                 <!-- card 1 starts-->
-                <div class="w-[100%] lg:w-[50%] h-[400px] flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px] flex items-center justify-center packL">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package1 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Paris</div>
@@ -256,7 +255,7 @@
                 <!-- card 1 ends here -->
 
                 <!-- card 2 starts here -->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packL">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package2 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Lisbon</div>
@@ -277,7 +276,7 @@
                 <!-- card 2 ends here-->
 
                 <!-- card 3 starts here-->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packR">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package3 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Bali</div>
@@ -298,7 +297,7 @@
                 <!-- card 3 ends here -->
 
                 <!-- card 4 starts here -->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packR">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package4 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%] font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Taj Mahal</div>
@@ -325,7 +324,7 @@
     <!-- Our package Section Ends here -->
 
     <!-- Service Section Starts here -->
-    <section class="bg-forest bg-cover h-full">
+    <section class="bg-forest bg-cover h-full max-w-full">
         <!-- component div -->
         <div class="py-5 flex flex-col items-center justify-center">
             <!-- title div -->
@@ -590,6 +589,8 @@
     <!-- footer ends here -->
 
     <script src="index.js"></script>
+    <!-- including scroll reveal library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 </html>

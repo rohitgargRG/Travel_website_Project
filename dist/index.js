@@ -8,3 +8,34 @@ burger.addEventListener("click", () => {
     nav.classList.add("hidden");
   }
 });
+
+// Scroll reveal animation
+
+document.addEventListener('DOMContentLoaded', function () {
+  ScrollReveal().reveal('.navY, .letB ,.packB', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 1500,
+      delay: 200,
+      easing: 'ease-in-out',
+      reset: true
+  });
+
+  ScrollReveal().reveal('.ExpT, .letL,.packL', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1500,
+    delay: 200,
+    easing: 'ease-in-out',
+    reset: true
+});
+
+ScrollReveal().reveal('.ExpR,.packR', {
+  origin: 'right',
+  distance: '50px',
+  duration: 1500,
+  delay: 300,
+  easing: 'ease-in-out',
+  reset: true
+});
+});
