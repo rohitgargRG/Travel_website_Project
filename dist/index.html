@@ -556,18 +556,44 @@
     <!-- footer starts here -->
         <footer class="h-[70%] flex flex-col font-vollkorn">
             <!-- email subscription div -->
-            <div class="flex justify-center items-center bg-trees bg-cover">
+            <div class="flex justify-center items-center bg-trees bg-cover re">
                 <!-- main content div - centered -->
                 <div class="bg-white rounded-xl p-8 my-12 mx-5 flex flex-col md:w-[70%] lg:w-[55%]">
                     <!-- label div -->
-                    <div class="text-black text-sm ">
+                    <div class="text-black text-sm">
                         Enter Your Email To Get Guide Book For Using Our Service!
                     </div>
                     <!-- input div -->
                     <div class="flex flex-col justify-center items-center md:flex-row md:gap-4 md:justify-start">
-                        <input type="text" class="w-[80%] h-10 my-5 border rounded-lg border-olive-green-light px-3 md:w-[65%] focus:border-2 focus:border-olive-green outline-none lg:w-[70%]" placeholder="had.travel@example.com">
+                        <input type="text"
+                            class="w-[80%] h-10 my-5 border rounded-lg border-olive-green-light px-3 md:w-[65%] focus:border-2 focus:border-olive-green outline-none lg:w-[70%]"
+                            placeholder="had.travel@example.com">
                         <!-- send button -->
-                        <button class="h-10 bg-olive-green-light hover:bg-white hover:border-2 hover:border-olive-green rounded-lg px-3 md:text-sm flex justify-center items-center lg:w-56">Send your email &#8594;</button>
+                        <button
+                            class="h-10 bg-olive-green-light hover:bg-white hover:border-2 hover:border-olive-green rounded-lg px-3 md:text-sm flex justify-center items-center lg:w-56"
+                            id="openPopUp">Send your email &#8594;</button>
+                    </div>
+                </div>
+                <!--PopUp after Send your Email-->
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp"
+                    id="popUp">
+                    <div>
+                        <div class="w-[50px] md:w-[100px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#618d3d"
+                                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-center py-[7%]">
+                        <h2 class="font-semibold text-3xl py-[5%]">Thank You</h2>
+                        <p class="text-olive-green">Your subscription is confirmed</p>
+                    </div>
+                    <div>
+                        <button
+                            class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
+                            id="closePopUp">OK</button>
                     </div>
                 </div>
             </div>
