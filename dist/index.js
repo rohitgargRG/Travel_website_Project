@@ -12,7 +12,7 @@ burger.addEventListener("click", () => {
 // Scroll reveal animation
 
 document.addEventListener('DOMContentLoaded', function () {
-  ScrollReveal().reveal('.navY, .letB ,.packB', {
+  ScrollReveal().reveal('.navY, .letB ,.packB,.servB,.revB,.footB', {
       origin: 'bottom',
       distance: '40px',
       duration: 1500,
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       reset: true
   });
 
-  ScrollReveal().reveal('.ExpT, .letL,.packL', {
+  ScrollReveal().reveal('.ExpT, .letL,.packL,.servL,.imgL,.revL', {
     origin: 'left',
     distance: '50px',
     duration: 1500,
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
 });
 
-ScrollReveal().reveal('.ExpR,.packR', {
+ScrollReveal().reveal('.ExpR,.packR,.servR,.imgR,.revR', {
   origin: 'right',
   distance: '50px',
   duration: 1500,
