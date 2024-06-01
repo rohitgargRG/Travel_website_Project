@@ -49,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // Scroll reveal animation
 
 document.addEventListener('DOMContentLoaded', function () {
-  ScrollReveal().reveal('.navY, .letB ,.packB, .arrows,.productsL,.serH,.cardup', {
+
+  ScrollReveal().reveal('.navY, .letB ,.packB,.servB,.revB,.footB, .arrows,.productsL,.serH,.cardup', {
+
       origin: 'bottom',
       distance: '40px',
       duration: 1500,
@@ -58,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
       reset: true
   });
 
-  ScrollReveal().reveal('.ExpT, .letL,.packL, .exploreR,.travelT,.serL,.logotr', {
+  ScrollReveal().reveal('.ExpT, .letL,.packL,.servL,.imgL,.revL, .exploreR,.travelT,.serL,.logotr', {
     origin: 'left',
     distance: '50px',
     duration: 1500,
@@ -67,7 +69,8 @@ document.addEventListener('DOMContentLoaded', function () {
     reset: true
 });
 
-ScrollReveal().reveal('.ExpR,.packR, .card,.traveltagT,.serR', {
+
+ScrollReveal().reveal('.ExpR,.packR, .servR,.imgR,.revR,.card,.traveltagT,.serR', {
   origin: 'right',
   distance: '50px',
   duration: 1500,
