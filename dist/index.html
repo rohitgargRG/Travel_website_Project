@@ -73,8 +73,9 @@
 
     <!--Expand your experience sections STARTS-->
 
-    <section id="about bg-slate-950">
-        <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[150vh]">
+    <section id="about">
+        <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[150vh] md:h-[100vh]">
+
             <div class="ExpT">
                 <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
                 <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
@@ -827,7 +828,7 @@
                             id="closePopUp">OK</button>
                     </div>
                 </div>
-                <!--pop up for wrong email-->
+                <!--pop up for no email-->
                 <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp hidden"
                     id="wrongPopUp">
                     <div>
@@ -847,6 +848,28 @@
                         <button
                             class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
                             id="wrongClosePopUp">OK</button>
+                    </div>
+                </div>
+                <!--pop up for wrong email-->
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp hidden"
+                    id="wrongEmail">
+                    <div>
+                        <div class="w-[50px] md:w-[100px]">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ff0000"
+                                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-center py-[7%]">
+                        <p class="text-olive-green"></p>
+                        <h2 class="font-semibold text-3xl py-[5%]">Wrong Email Address</h2>
+                    </div>
+                    <div>
+                        <button
+                            class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
+                            id="wrongCloseEmailPopUp">OK</button>
                     </div>
                 </div>
             </div>
