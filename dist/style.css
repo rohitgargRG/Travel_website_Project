@@ -23,9 +23,6 @@
 .profile {
     @apply absolute w-[50px] top-[80%] left-[40%] bg-white rounded-[50%]
 }
-.popUp {
-    @apply absolute top-[0%] scale-[0.1] hidden transition delay-[0.4s] top
-}
 .open-popUp{
     @apply visible top-[-20%] scale-[1]
 }

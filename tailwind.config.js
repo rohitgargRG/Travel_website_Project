@@ -13,9 +13,6 @@ module.exports = {
         "olive-green-light": "#89ba60",
         "review-green": "#CEBA5A",
       },
-      // backgroundImage: theme =>({
-      //   'breakSec' : "url('/media/breakBGIMG.jpg')",
-      // }),
 
       backgroundImage: {
         breakSec: "url('/media/breakBGIMG.jpg')",
