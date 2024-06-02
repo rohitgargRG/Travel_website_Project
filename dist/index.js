@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       origin: "bottom",
       distance: "40px",
-      duration: 1500,
+      duration: 1000,
       delay: 200,
       easing: "ease-in-out",
       reset: true,
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       origin: "left",
       distance: "50px",
-      duration: 1500,
+      duration: 1000,
       delay: 200,
       easing: "ease-in-out",
       reset: true,
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       origin: "right",
       distance: "50px",
-      duration: 1500,
+      duration: 1000,
       delay: 300,
       easing: "ease-in-out",
       reset: true,
