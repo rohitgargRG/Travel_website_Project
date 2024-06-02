@@ -1,7 +1,7 @@
 # Node modules
 *node_modules/*
 
-dist/output.css
+./dist/output.css
 
 # Log files
 npm-debug.log*
