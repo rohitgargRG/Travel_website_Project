@@ -20,21 +20,24 @@
     <!-- logo -->
     <link rel="shortcut icon" href="https://wheredowewander.com/wp-content/uploads/2023/04/WDWWlogo.png" type="image/x-icon">
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- merchandise -->
     <style>
         .hidden { display: none; }
     </style>
+
 </head>
 <body class="max-w-full">
     <!-- nav starts! -->
     <section class=" bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
 
-        <nav class="bg-transparent fixed text-center w-full flex  justify-center navY">
+        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50 navY">
             <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
-                <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5" id="burger">
-                    <a href="#" id="text">Had Travel</a>
+                <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5"
+                    id="burger">
+                    <p>Had Travel</p>
                 </div>
                 <ul class="font-bold text-olive-green font-lobstertwo lg:flex justify-center items-center" id="nav">
                     <li class="m-5"><a href="#">About</a></li>
@@ -42,17 +45,20 @@
                     <li class="m-5"><a href="#">Destination</a></li>
                     <li class="m-5"><a href="#">Package</a></li>
                     <div class="w-40"></div>
-                    <li class="m-5"><a href="#">Service</a></li>
-                    <li class="m-5"><a href="#">Gallery</a></li>
-                    <li class="m-5"><a href="#">Review</a></li>
-                    <li class="m-5"><a href="#">Merchandise</a></li>
+                    <li class="m-5"><a href="#services">Service</a></li>
+                    <li class="m-5"><a href="#gallery">Gallery</a></li>
+                    <li class="m-5"><a href="#reviews">Review</a></li>
+                    <li class="m-5"><a href="#merch">Merchandise</a></li>
+
                 </ul>
             </div>
         </nav>
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
-    <section class=" ExpT h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]"> <!--height changed to 100vh-->
+
+    <section class="ExpT h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]" id="home"> <!--height changed to 100vh-->
+
         <div class=" h-[100%] w-[80%]  flex flex-col justify-center ">
             <div class="text-[60px] font-semibold w-full breakT">Break Your Experience!</div>
             
@@ -67,40 +73,49 @@
 
     <!--Expand your experience sections STARTS-->
 
-    <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
-        <div class="ExpT">
-            <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
-            <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
-            <div class="mb-10">
-                Embark on an unforgettable journey and uncover the hidden gems of the world with our expertly crafted travel itineraries. Whether you're an adventurer, a culture enthusiast, or someone seeking tranquility, we have something special for everyone.
-            </div>
-            <div class="flex">
-                <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green transition duration-400 ease-in-out transform hover:bg-olive-green hover:text-white cursor-pointer">
-                    Let's Expand!
+
+    <section id="about">
+        <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[150vh]">
+            <div class="ExpT">
+                <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
+                <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
+                <div class="mb-10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati a omnis repellat perspiciatis
+                    nam aliquid
+                    quis. Sapiente consectetur illo, eius quis amet, laudantium atque, alias dolorum rerum nam quam quisquam
+                    reprehenderit.
+                    Unde quia voluptas laborum mollitia rerum sed delectus nemo officiis neque cupiditate voluptatum earum,
+                    possimus et vel
+                    eos.
+                </div>
+                <div class="flex">
+                    <div class=" border-2 border-olive-green rounded-full px-9 py-2 text-olive-green ">
+                        Let's Expand!
+                    </div>
                 </div>
             </div>
+            <div class="m-[5%] pb-[5%] w-[75%] md:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5 ExpR">
+                <div>
+                    <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img2.jpg" alt="Img2" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img3.jpg" alt="Img3" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
+                </div>
+                <div>
+                    <img src="./img/img4.jpg" alt="Img4" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
+                </div>
+
+            </div>
         </div>
-        <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5 ExpR">
-            <div>
-                <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
-            </div>
-            <div>
-                <img src="./img/img2.jpg" alt="Img2" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
-            </div>
-            <div>
-                <img src="./img/img3.jpg" alt="Img3" class="w-[650px] h-[200px] rounded-tl-[100px] rounded-br-[100px]">
-            </div>
-            <div>
-                <img src="./img/img4.jpg" alt="Img4" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
-            </div>
-        </div>
-    </div>
     <!--Expand your experience sections ENDS-->
 
 
     <!-- lets go sections starts -->
 
-    <section class="bg-lesGo min-h-[100vh] bg-cover bg-center bg-opacity-10">
+    <section class="bg-lesGo min-h-[100vh] bg-cover bg-center bg-opacity-10" id="season">
     
         <div class="px-[12%] py-[2%]">
             <!--Lets's Go Text-->
@@ -143,8 +158,10 @@
     
             <!--Load More-->
             <div class="flex justify-center px-[5%] letB">
+
                 <div class=" bg-olive-green rounded-full px-9 py-2 text-white transition duration-400 ease-in-out transform hover:bg-white hover:text-olive-green hover:cursor-pointer">
                     Load More <i class="fa-solid fa-arrow-right"></i> 
+
                 </div>
             </div>
         </div>    
@@ -153,7 +170,9 @@
     <!-- lets go section ends -->
 
     <!-- explore section starts -->
-    <section class="h-auto font-lobstertwo z-0">
+
+    <section class="h-auto font-lobstertwo z-0" id="destination">
+
         <div class="ml-4 sm:ml-10  lg:ml-40 h-full w-full lg:w-[70%] flex flex-col justify-center">
             <!-- text container -->
             <div class="exploreR text-center lg:text-left mt-5">
@@ -165,8 +184,10 @@
                 <!-- card container -->
                 <div class="card flex flex-wrap gap-8  lg:gap-x-20 justify-center items-center relative overflow-hidden">
                     <!-- card 1 -->
-                    <div class="w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-bandar group relative overflow-hidden">
-                        <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+                    <div
+                        class="w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-bandar group relative overflow-hidden">
+                        <div
+                            class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Bandar Lampung</p>
@@ -179,8 +200,10 @@
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-phuket group relative overflow-hidden">
+                    <div
+                        class="card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-phuket group relative overflow-hidden">
                         <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Phuket</p>
@@ -193,8 +216,11 @@
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-goa group relative overflow-hidden">
+
+                    <div
+                        class="card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-goa group relative overflow-hidden">
                         <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Goa</p>
@@ -209,10 +235,13 @@
                         </div>
                     </div>
 
+    
                     <!-- hidden cards -->
                     <!-- card 4 -->
-                    <div class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-bali group relative overflow-hidden hidden">
+                    <div
+                        class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-bali group relative overflow-hidden hidden">
                         <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Bali</p>
@@ -227,8 +256,11 @@
                         </div>
                     </div>
                     <!-- card 5 -->
-                    <div class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-angkor-wat group relative overflow-hidden hidden">
+
+                    <div
+                        class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-angkor-wat group relative overflow-hidden hidden">
                         <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Angkor-Wat</p>
@@ -243,8 +275,11 @@
                         </div>
                     </div>
                     <!-- card 6 -->
-                    <div class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-shimla group relative overflow-hidden hidden">
+
+                    <div
+                        class="extra-card w-40 sm:w-48 lg:w-60 h-60 sm:h-72 lg:h-80 rounded-lg bg-shimla group relative overflow-hidden hidden">
                         <div class="absolute inset-0 flex flex-col bg-black/20 -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 rounded-lg">
+
                             <!-- address div -->
                             <div class="m-4 h-[100px] sm:h-[140px] lg:h-[160px]">
                                 <p class="text-white text-xl sm:text-2xl">Shimla</p>
@@ -260,7 +295,8 @@
                     </div>
                 </div>
                 <!-- arrow container -->
-                <div class="arrows flex justify-center items-center mt-12 mb-24">
+                <div class="arrows flex justify-center items-center mt-12 mb-24 arrows">
+
                     <button id="toggleButton"><img id="toggleIcon" src="../media/down-arrow.jpg" alt=""></button>
                 </div>
             </div>
@@ -271,7 +307,7 @@
     
     <!-- Our package Section starts here -->
 
-    <section class="h-auto ">
+    <section class="h-auto " id="package">
         <div class="h-full w-full">
             
             <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl packB">
@@ -377,11 +413,11 @@
     <!-- Our package Section Ends here -->
 
     <!-- Service Section Starts here -->
-    <section class="bg-forest bg-cover h-full max-w-full font-vollkorn">
+
+    <section class="bg-forest bg-cover h-full font-vollkorn" id="services">
         <!-- component div -->
         <div class="py-5 flex flex-col items-center justify-center">
             <!-- title div -->
-
             <div class="flex flex-col items-center justify-center mt-5 servB">
 
                 <p class="text-4xl font-semibold text-black">Service & Support</p>
@@ -426,8 +462,9 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                
-              <div class="bg-white w-80 h-80 rounded-xl servL">
+
+                <div class="bg-white w-80 h-80 rounded-xl servL">
+
                     <!-- logo and heading div -->
                     <div class="flex flex-row items-center justify-center p-5 gap-5">
                         <img src="../media/location.png" class="h-16 logotr" alt="">
@@ -467,7 +504,9 @@
     <!-- Service section ends here -->
 
     <!-- Image gallery Section starts -->
-    <section class="min-h-screen w-full mt-10">
+
+    <section class="min-h-screen w-full mt-10" id="gallery">
+
         <div class="h-[100px] imgL">
             <div class="text-4xl font-lobstertwo text-olive-green flex justify-start pl-32"><p>Our Memorials</p></div>
             <div class="text-3xl font-lobstertwo pl-32"><p>You are Cool, You are Amazing</p></div>
@@ -481,7 +520,9 @@
             
             </div>
             
-            <div class="h-full w-[20%] p-1 ">
+
+            <div class="h-full w-[20%] p-1">
+
                 <div class="imgR h-[30%] rounded-tl-3xl rounded-br-3xl bg-gallery3 bg-cover bg-center"></div>
                 
                 <div class="imgR h-[70%] mt-2 rounded-tr-3xl rounded-bl-3xl bg-gallery5 bg-cover bg-center"></div>
@@ -489,9 +530,11 @@
         </div>
 
         <div class="h-[400px] flex justify-center gap-2 mt-3">
+
             <div class="imgL h-full w-[20%] rounded-br-3xl rounded-tl-3xl bg-gallery6 bg-cover bg-center"></div>
 
             <div class="imgR h-full w-[40%] rounded-bl-3xl rounded-tr-3xl bg-gallery7 bg-cover bg-center"></div>          
+
         </div>
             
     </section>
@@ -499,9 +542,10 @@
 
 
     <!-- review starts -->
-    <section class="bg-review bg-cover bg-center mt-8">
-        <div class=" p-[5%] flex flex-col items-center font-vollkorn revB">
-            <div class="text-olive-green pb-[5%]">
+
+    <section class="bg-review bg-cover bg-center mt-8" id="reviews">
+        <div class=" p-[5%] flex flex-col items-center revB">
+            <div class="text-review-green text-center pb-[5%]">
 
                 <p class="font-lobstertwo font-semibold text-5xl">Reviews</p>
                 <p class="text-2xl">They said about us</p>
@@ -746,22 +790,263 @@
     <!-- merchandise section ends -->
 
 
+    <!-- merchandise sections starts -->
+    <section class="container mx-auto flex flex-col justify-center items-center font-lobstertwo" id="merch">
+        <h1 class="text-5xl font-bold mb-6 mt-10 travelT">Travel Merchandise</h1>
+    
+        <!-- Filter Tags -->
+        <div class="mb-6 traveltagT">
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2" data-filter="all">All</button>
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
+                data-filter="bags">Bags</button>
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
+                data-filter="jacket">Jackets</button>
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
+                data-filter="boots">Boots</button>
+        </div>
+    
+        <!-- Products -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-10 ">
+            <!-- product 1 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag4new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 2 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag1new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 3 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag2new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8 mb-5">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 4 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag3.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 5 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk1.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 6 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk2.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 7 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk3.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 8 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe1.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 9 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe2.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 10 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe3new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- merchandise section ends -->
+
 
     <!-- footer starts here -->
     <footer class="h-[70%] flex flex-col font-vollkorn">
             <!-- email subscription div -->
-            <div class="flex justify-center items-center bg-trees bg-cover">
+            <div class="flex justify-center items-center bg-trees bg-cover re">
                 <!-- main content div - centered -->
-                <div class="bg-white footB rounded-xl p-8 my-12 mx-5 flex flex-col md:w-[70%] lg:w-[55%]">
+
+                <div class="bg-white rounded-xl p-8 my-12 mx-5 flex flex-col md:w-[70%] lg:w-[55%] footB">
+
                     <!-- label div -->
-                    <div class="text-black text-sm ">
+                    <div class="text-black text-sm">
                         Enter Your Email To Get Guide Book For Using Our Service!
                     </div>
                     <!-- input div -->
                     <div class="flex flex-col justify-center items-center md:flex-row md:gap-4 md:justify-start">
-                        <input type="text" class="w-[80%] h-10 my-5 border rounded-lg border-olive-green-light px-3 md:w-[65%] focus:border-2 focus:border-olive-green outline-none lg:w-[70%]" placeholder="had.travel@example.com">
+                        <input type="email"
+                            class="w-[80%] h-10 my-5 border rounded-lg border-olive-green-light px-3 md:w-[65%] focus:border-2 focus:border-olive-green outline-none lg:w-[70%]"
+                            placeholder="had.travel@example.com" id="mail">
                         <!-- send button -->
-                        <button class="h-10 bg-olive-green-light hover:bg-white hover:border-2 hover:border-olive-green rounded-lg px-3 md:text-sm flex justify-center items-center lg:w-56">Send your email &#8594;</button>
+                        <button
+                            class="h-10 bg-olive-green-light hover:bg-white hover:border-2 hover:border-olive-green rounded-lg px-3 md:text-sm flex justify-center items-center lg:w-56"
+                            id="openPopUp">Send your email &#8594;</button>
+                    </div>
+                </div>
+                <!--PopUp after Send your Email-->
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] hidden popUp"
+                    id="popUp">
+                    <div>
+                        <div class="w-[50px] md:w-[100px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#618d3d"
+                                    d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-center py-[7%]">
+                        <h2 class="font-semibold text-3xl py-[5%]">Thank You</h2>
+                        <p class="text-olive-green">Your subscription is confirmed</p>
+                    </div>
+                    <div>
+                        <button
+                            class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
+                            id="closePopUp">OK</button>
+                    </div>
+                </div>
+                <!--pop up for wrong email-->
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp hidden"
+                    id="wrongPopUp">
+                    <div>
+                        <div class="w-[50px] md:w-[100px]">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ff0000"
+                                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-center py-[7%]">
+                        <p class="text-olive-green">To Subscribe</p>
+                        <h2 class="font-semibold text-3xl py-[5%]">Please enter E-Mail First</h2>
+                    </div>
+                    <div>
+                        <button
+                            class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
+                            id="wrongClosePopUp">OK</button>
                     </div>
                 </div>
             </div>
