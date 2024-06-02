@@ -23,3 +23,9 @@
 .profile {
     @apply absolute w-[50px] top-[80%] left-[40%] bg-white rounded-[50%]
 }
+.open-popUp{
+    @apply visible top-[-20%] scale-[1]
+}
+.filter-hover{
+        @apply hover:text-olive-green
+}

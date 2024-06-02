@@ -1,3 +1,4 @@
+tailwind;
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
@@ -12,18 +13,17 @@ module.exports = {
         "olive-green-light": "#89ba60",
         "review-green": "#CEBA5A",
       },
-      // backgroundImage: theme =>({
-      //   'breakSec' : "url('/media/breakBGIMG.jpg')",
-      // }),
 
       backgroundImage: {
         breakSec: "url('/media/breakBGIMG.jpg')",
         bandar: "url('/media/bandar.jpg')",
         phuket: "url('/media/phuket.jpg')",
         goa: "url('/media/goa.jpg')",
-        'bali': "url('/media/bali3.jpg')",
-        "angkor-wat": "url('/media/angkor.jpg')",
-        'shimla': "url('/media/shimla.jpg')",
+
+        bali: "url('/media/bali3.jpg')",
+        angkor: "url('/media/angkor.jpg')",
+        shimla: "url('/media/shimla.jpg')",
+
         lesGo: "url('/media/lesGo.jpg')",
         package1: "url('/media/p1.jpg')",
         package2: "url('/media/p_2.jpeg')",
