@@ -20,6 +20,8 @@ const popUp = document.querySelector("#popUp");
 const wrongPopUp = document.querySelector("#wrongPopUp");
 const wrongClosePopUp = document.querySelector("#wrongClosePopUp");
 const emailInput = document.querySelector("#mail");
+const wrongEmail = document.querySelector("#wrongEmail");
+const wrongCloseEmailPopUp = document.querySelector("#wrongCloseEmailPopUp");
 
 sendButton.addEventListener("click", ()=> {
   if (emailInput.value.trim() === "") {
@@ -27,9 +29,16 @@ sendButton.addEventListener("click", ()=> {
     wrongPopUp.classList.remove("hidden");
     written = false;
   } else {
-    written = true;
-    sendButton.classList.add("open-popUp");
-    popUp.classList.remove("hidden");
+    if (emailInput.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+      written = true;
+      sendButton.classList.add("open-popUp");
+      popUp.classList.remove("hidden");
+      emailInput.value = '';
+    }else{
+      written = true;
+      sendButton.classList.add("open-popUp");
+      wrongEmail.classList.remove("hidden");
+    }
   }
 });
 
@@ -40,6 +49,10 @@ closePopUp.addEventListener("click", () => {
 wrongClosePopUp.addEventListener("click", () => {
   wrongClosePopUp.classList.remove("open-popUp");
   wrongPopUp.classList.add("hidden");
+});
+wrongCloseEmailPopUp.addEventListener("click", () => {
+  wrongCloseEmailPopUp.classList.remove("open-popUp");
+  wrongEmail.classList.add("hidden");
 });
 
 
