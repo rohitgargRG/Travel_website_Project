@@ -11,17 +11,37 @@ burger.addEventListener("click", () => {
 });
 
 //pop Up Js
-const openPopUp = document.querySelector("#openPopUp");
+let written = false;
+
+const sendButton = document.querySelector("#openPopUp");
 const closePopUp = document.querySelector("#closePopUp");
 const popUp = document.querySelector("#popUp");
-openPopUp.addEventListener("click", () => {
-  openPopUp.classList.add("open-popUp");
-  popUp.classList.remove("hidden");
+const wrongPopUp = document.querySelector("#wrongPopUp");
+const wrongClosePopUp = document.querySelector("#wrongClosePopUp");
+const emailInput = document.querySelector("#mail");
+
+sendButton.addEventListener("click", ()=> {
+  if (emailInput.value.trim() === "") {
+    sendButton.classList.add("open-popUp");
+    wrongPopUp.classList.remove("hidden");
+    written = false;
+  } else {
+    written = true;
+    sendButton.classList.add("open-popUp");
+    popUp.classList.remove("hidden");
+  }
 });
+
 closePopUp.addEventListener("click", () => {
   closePopUp.classList.remove("open-popUp");
   popUp.classList.add("hidden");
 });
+wrongClosePopUp.addEventListener("click", () => {
+  wrongClosePopUp.classList.remove("open-popUp");
+  wrongPopUp.classList.add("hidden");
+});
+
+
 
 //More explore
 const toggleButton = document.getElementById("toggleButton");

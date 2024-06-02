@@ -26,3 +26,6 @@
 .open-popUp{
     @apply visible top-[-20%] scale-[1]
 }
+.filter-hover{
+        @apply hover:text-olive-green
+}

@@ -19,12 +19,16 @@
 
     <!-- logo -->
     <link rel="shortcut icon" href="https://wheredowewander.com/wp-content/uploads/2023/04/WDWWlogo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- nav starts -->
     <section class="bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
 
-        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50">
+        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50 navY">
             <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
                 <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5"
                     id="burger">
@@ -46,7 +50,7 @@
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
-    <section class=" h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]" id="home"> <!--height changed to 100vh-->
+    <section class="ExpT h-[100vh] font-lobstertwo  flex justify-start items-start w-[70%]" id="home"> <!--height changed to 100vh-->
         <div class=" h-[100%] w-[80%]  flex flex-col justify-center ">
             <div class="text-[60px] font-semibold  w-full">Break Your Experience!</div>
             
@@ -62,8 +66,8 @@
     <!--Expand your experience sections STARTS-->
 
     <section id="about">
-        <div class="mx-[10%] flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-center items-center h-[100vh]">
-            <div>
+        <div class="mx-[10%] flex flex-col md:flex-row justify-center items-center h-[150vh]">
+            <div class="ExpT">
                 <p class="font-lobstertwo text-olive-green text-5xl mb-3">Expand your experience</p>
                 <p class="font-lobstertwo text-5xl mb-5">With Us!</p>
                 <div class="mb-10">
@@ -81,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-[5%] pb-[5%] w-[75%]  lg:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5">
+            <div class="m-[5%] pb-[5%] w-[75%] md:w-[100%] grid justify-center items-center grid-rows-2 grid-cols-2 gap-5 ExpR">
                 <div>
                     <img src="./img/img1.jpg" alt="Img1" class="w-[650px] h-[200px] rounded-tr-[100px] rounded-bl-[100px]">
                 </div>
@@ -105,7 +109,7 @@
     
         <div class="px-[12%] py-[2%]">
             <!--Lets's Go Text-->
-            <div>
+            <div class="letL">
                 <p class="font-lobstertwo font-semibold text-[3.5rem]">Let's Go!</p>
                 <p class="text-olive-green text-[2rem]">
                     Vacation with us <br> and get rid of your tiredness.
@@ -114,7 +118,7 @@
     
             <!--season Card-->
             <div class="p-[5%] flex justify-center">
-                <div class="flex flex-col gap-[5px] md:gap-[50px] md:flex-wrap md:flex-row bechme justify-between">
+                <div class="flex flex-col gap-[5px] md:gap-[50px] md:flex-wrap md:flex-row bechme justify-between letB">
                     <div class="outer">
                         <svg class="lesGoCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="#618d3d"
@@ -143,7 +147,7 @@
             </div>
     
             <!--Load More-->
-            <div class="flex justify-center px-[5%]">
+            <div class="flex justify-center px-[5%] letB">
                 <div class=" bg-olive-green rounded-full px-9 py-2 text-white ">
                     Load More ->
                 </div>
@@ -276,7 +280,7 @@
                     </div>
                 </div>
                 <!-- arrow container -->
-                <div class="arrows flex justify-center items-center mt-12 mb-24">
+                <div class="arrows flex justify-center items-center mt-12 mb-24 arrows">
                     <button id="toggleButton"><img id="toggleIcon" src="../media/down-arrow.jpg" alt=""></button>
                 </div>
             </div>
@@ -289,11 +293,11 @@
     <section class="h-auto " id="package">
         <div class="h-full w-full">
             
-            <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl">
+            <div class="h-[8%]  flex items-center justify-center font-lobstertwo font-semibold text-6xl packB">
                 <p>Our Package</p>
             </div>
             
-            <div class="h-[5%]  flex items-start justify-center font-lobstertwo text-olive-green text-2xl tracking-widest">
+            <div class="h-[5%]  flex items-start justify-center font-lobstertwo text-olive-green text-2xl tracking-widest packB">
                 <P>Set your package to explore around the world!</P>
             </div>
             
@@ -302,7 +306,7 @@
 
 
                 <!-- card 1 starts-->
-                <div class="w-[100%] lg:w-[50%] h-[400px] flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px] flex items-center justify-center packL">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package1 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Paris</div>
@@ -323,7 +327,7 @@
                 <!-- card 1 ends here -->
 
                 <!-- card 2 starts here -->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packL">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package2 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Lisbon</div>
@@ -344,7 +348,7 @@
                 <!-- card 2 ends here-->
 
                 <!-- card 3 starts here-->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packR">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package3 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%]  font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Bali</div>
@@ -365,7 +369,7 @@
                 <!-- card 3 ends here -->
 
                 <!-- card 4 starts here -->
-                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center ">
+                <div class="w-[100%] lg:w-[50%] h-[400px]  flex items-center justify-center packR">
                     <div class="w-[40%] h-[80%] rounded-l-xl  bg-package4 bg-cover bg-center"></div>
                     <div class="w-[40%] h-[80%] font-lobstertwo">
                         <div class="text-5xl font-semibold ml-3 text-olive-green">Taj Mahal</div>
@@ -396,17 +400,17 @@
         <!-- component div -->
         <div class="py-5 flex flex-col items-center justify-center">
             <!-- title div -->
-            <div class="flex flex-col items-center justify-center mt-5">
+            <div class="flex flex-col items-center justify-center mt-5 servB">
                 <p class="text-4xl font-semibold text-black">Service & Support</p>
                 <p class="text-xl  font-semibold text-green-950">Our service is your dream</p>
             </div>
             <!-- cards -->
             <div class="flex flex-col justify-center items-center mt-10 gap-10 md:flex-row md:flex flex-wrap md:w-[60%] ">
                 <!-- card 1 -->
-                <div class="bg-white w-80 h-80 rounded-xl">
+                <div class="bg-white w-80 h-80 rounded-xl servL">
                     <!-- logo and heading div -->
                     <div class="flex flex-row items-center justify-center p-5 gap-5">
-                        <img src="../media/discount.png" class="h-16" alt="">
+                        <img src="../media/discount.png" class="h-16 logotr" alt="">
                         <!-- title and rating -->
                         <div class="flex flex-col">
                             <p class="text-lg font-semibold">Good prices & Big Deals</p>
@@ -420,7 +424,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="bg-white w-80 h-80 rounded-xl">
+                <div class="bg-white w-80 h-80 rounded-xl servR">
                     <!-- logo and heading div -->
                     <div class="flex flex-row items-center justify-center p-5 gap-5">
                         <img src="../media/home.png" class="h-16" alt="">
@@ -437,7 +441,7 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="bg-white w-80 h-80 rounded-xl">
+                <div class="bg-white w-80 h-80 rounded-xl servL">
                     <!-- logo and heading div -->
                     <div class="flex flex-row items-center justify-center p-5 gap-5">
                         <img src="../media/location.png" class="h-16" alt="">
@@ -454,7 +458,7 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="bg-white w-80 h-80 rounded-xl">
+                <div class="bg-white w-80 h-80 rounded-xl servR">
                     <!-- logo and heading div -->
                     <div class="flex flex-row items-center justify-center p-5 gap-5">
                         <img src="../media/communication.png" class="h-16" alt="">
@@ -477,32 +481,32 @@
 
     <!-- Image gallery Section starts -->
     <section class="min-h-screen w-full mt-10" id="gallery">
-        <div class="h-[100px]">
+        <div class="h-[100px] imgL">
             <div class="text-4xl font-lobstertwo text-olive-green flex justify-start pl-32"><p>Our Memorials</p></div>
             <div class="text-3xl font-lobstertwo pl-32"><p>You are Cool, You are Amazing</p></div>
         </div>
         <div class="h-[700px] flex justify-center gap-1 p-1">
             <div class="h-full w-[40%]  p-1">
                 
-                <div class="h-[50%] rounded-tr-3xl rounded-bl-3xl bg-gallery1 bg-cover bg-center"></div>
+                <div class="imgL h-[50%] rounded-tr-3xl rounded-bl-3xl bg-gallery1 bg-cover bg-center"></div>
                 
-                <div class="h-[50%] mt-2 rounded-tl-3xl rounded-br-3xl bg-gallery4 bg-cover bg-center"></div>
+                <div class="imgL h-[50%] mt-2 rounded-tl-3xl rounded-br-3xl bg-gallery4 bg-cover bg-center"></div>
             
             </div>
             
             <div class="h-full w-[20%] p-1">
-                <div class="h-[30%] rounded-tl-3xl rounded-br-3xl bg-gallery3 bg-cover bg-center"></div>
+                <div class="imgR h-[30%] rounded-tl-3xl rounded-br-3xl bg-gallery3 bg-cover bg-center"></div>
                 
-                <div class="h-[70%] mt-2 rounded-tr-3xl rounded-bl-3xl bg-gallery5 bg-cover bg-center"></div>
+                <div class="imgR h-[70%] mt-2 rounded-tr-3xl rounded-bl-3xl bg-gallery5 bg-cover bg-center"></div>
             </div>
         </div>
 
         <div class="h-[400px] flex justify-center gap-2 mt-3">
-            <div class="h-full w-[20%] rounded-br-3xl rounded-tl-3xl bg-gallery6 bg-cover bg-center">
+            <div class="imgL h-full w-[20%] rounded-br-3xl rounded-tl-3xl bg-gallery6 bg-cover bg-center">
 
             </div>
 
-            <div class="h-full w-[40%] rounded-bl-3xl rounded-tr-3xl bg-gallery7 bg-cover bg-center">
+            <div class="imgR h-full w-[40%] rounded-bl-3xl rounded-tr-3xl bg-gallery7 bg-cover bg-center">
 
             </div>          
         </div>
@@ -513,7 +517,7 @@
 
     <!-- review starts -->
     <section class="bg-review bg-cover bg-center mt-8" id="reviews">
-        <div class=" p-[5%] flex flex-col items-center">
+        <div class=" p-[5%] flex flex-col items-center revB">
             <div class="text-review-green pb-[5%]">
                 <p class="font-lobstertwo font-semibold text-5xl">Reviews</p>
                 <p class="text-2xl">They said about us</p>
@@ -522,7 +526,7 @@
             <!--Cards-->
             <div class="flex flex-col flex-wrap md:flex-row gap-[10px] md:gap-[50px] justify-between md:flex-wrap">
                 <!--Card 1 -->
-                <div class="outer-review-card">
+                <div class="outer-review-card cardup revL">
                     <div class="bg-reviewUpper1 upper-card">
                         <div class="white"></div>
                         <div class="profile">
@@ -538,7 +542,7 @@
                     </div>
                 </div>
                 <!--Card 2 -->
-                <div class="outer-review-card">
+                <div class="outer-review-card cardup revB">
                     <div class="bg-reviewUpper2 upper-card">
                         <div class="white"></div>
                         <div class="profile">
@@ -555,7 +559,7 @@
                     </div>
                 </div>
                 <!--Card 3 -->
-                <div class="outer-review-card">
+                <div class="outer-review-card cardup revR">
                     <div class="bg-reviewUpper3 upper-card">
                         <div class="white"></div>
                         <div class="profile">
@@ -583,12 +587,12 @@
     
         <!-- Filter Tags -->
         <div class="mb-6 traveltagT">
-            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2" data-filter="all">All</button>
-            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2" data-filter="all">All</button>
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
                 data-filter="bags">Bags</button>
-            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
                 data-filter="jacket">Jackets</button>
-            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+            <button class="filter-btn bg-transparent text-black py-2 px-4 rounded mr-2"
                 data-filter="boots">Boots</button>
         </div>
     
@@ -774,16 +778,16 @@
             <!-- email subscription div -->
             <div class="flex justify-center items-center bg-trees bg-cover re">
                 <!-- main content div - centered -->
-                <div class="bg-white rounded-xl p-8 my-12 mx-5 flex flex-col md:w-[70%] lg:w-[55%]">
+                <div class="bg-white rounded-xl p-8 my-12 mx-5 flex flex-col md:w-[70%] lg:w-[55%] footB">
                     <!-- label div -->
                     <div class="text-black text-sm">
                         Enter Your Email To Get Guide Book For Using Our Service!
                     </div>
                     <!-- input div -->
                     <div class="flex flex-col justify-center items-center md:flex-row md:gap-4 md:justify-start">
-                        <input type="text"
+                        <input type="email"
                             class="w-[80%] h-10 my-5 border rounded-lg border-olive-green-light px-3 md:w-[65%] focus:border-2 focus:border-olive-green outline-none lg:w-[70%]"
-                            placeholder="had.travel@example.com">
+                            placeholder="had.travel@example.com" id="mail">
                         <!-- send button -->
                         <button
                             class="h-10 bg-olive-green-light hover:bg-white hover:border-2 hover:border-olive-green rounded-lg px-3 md:text-sm flex justify-center items-center lg:w-56"
@@ -791,7 +795,7 @@
                     </div>
                 </div>
                 <!--PopUp after Send your Email-->
-                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp"
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] hidden popUp"
                     id="popUp">
                     <div>
                         <div class="w-[50px] md:w-[100px]">
@@ -812,6 +816,28 @@
                             id="closePopUp">OK</button>
                     </div>
                 </div>
+                <!--pop up for wrong email-->
+                <div class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg absolute flex flex-col items-center p-[3%] rounded-[30px] popUp hidden"
+                    id="wrongPopUp">
+                    <div>
+                        <div class="w-[50px] md:w-[100px]">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ff0000"
+                                    d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-center py-[7%]">
+                        <p class="text-olive-green">To Subscribe</p>
+                        <h2 class="font-semibold text-3xl py-[5%]">Please enter E-Mail First</h2>
+                    </div>
+                    <div>
+                        <button
+                            class="font-lobstertwo bg-olive-green rounded-full px-36 py-3 font-semibold text-xl text-white hover:shadow-lg"
+                            id="wrongClosePopUp">OK</button>
+                    </div>
+                </div>
             </div>
             <!-- main footer container -->
             <div class="flex flex-col">
@@ -820,7 +846,7 @@
                     <!-- text div -->
                     <div class="flex flex-col md:w-[45%]">
                         <!-- text -->
-                        <div class="flex flex-col">
+                        <div class="flex flex-col footB">
                             <p class="text-xl my-2">Start your journey with us!</p>
                             <p>Explore the world with us! We offer exclusive deals, personalized travel options, and exceptional customer service to ensure your journey is unforgettable. Stay connected and inspired by following us on social media. Contact us anytime for assistance. Your adventure starts here!</p>
                         </div>
@@ -834,8 +860,8 @@
                     <div class="flex flex-row flex-wrap justify-between items-start mt-4">
                         <!-- link column 1 -->
                         <div class="flex flex-col  md:px-6">
-                            <p class="font-semibold">Resource</p>
-                            <div class="flex flex-col mt-3 gap-1 text-olive-green">
+                            <p class="font-semibold footB">Resource</p>
+                            <div class="flex flex-col mt-3 gap-1 text-olive-green footB">
                                 <a href="#"><p>Documentation</p></a>
                                 <a href="#"><p>Application</p></a>
                                 <a href="#"><p>System</p></a>
@@ -843,7 +869,7 @@
                             </div>
                         </div>
                         <!-- link column 2 -->
-                        <div class="flex flex-col  md:px-6">
+                        <div class="flex flex-col  md:px-6 footB">
                             <p class="font-semibold">Community</p>
                             <div class="flex flex-col mt-3 gap-1 text-olive-green">
                                 <a href="#"><p>Forum</p></a>
@@ -854,7 +880,7 @@
                             </div>
                         </div>
                         <!-- link column 3 -->
-                        <div class="flex flex-col  md:px-6">
+                        <div class="flex flex-col  md:px-6 footB">
                             <p class="font-semibold">Help</p>
                             <div class="flex flex-col mt-3 gap-1 text-olive-green">
                                 <a href="#"><p>Contact</p></a>
@@ -866,7 +892,7 @@
                     </div>
                 </div>
                 <!-- copyright div -->
-                <div class="flex justify-center items-center  mb-4">
+                <div class="flex justify-center items-center  mb-4 footB">
                     &#169; Had Travel 2024. All rights reserved.
                 </div>
             </div>
@@ -874,6 +900,9 @@
     <!-- footer ends here -->
 
     <script src="index.js"></script>
+    <!-- including scroll reveal library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
 </body>
 </html>
