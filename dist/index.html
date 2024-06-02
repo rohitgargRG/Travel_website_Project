@@ -515,42 +515,196 @@
     <!-- review ends -->
 
 
-    <!-- Merch ends -->
-
-    <section class="h-[100vh]" id="merch">
-        <div class="p-[5%]">
-            <!--Title-->
-            <div class="text-center pb-[3%]">
-                <h2 class="font-lobstertwo font-semibold text-4xl">Merchandise</h2>
-                <p class="text-olive-green text-2xl font-semibold">Complete your trip with cool outfits</p>
+    <!-- merchandise sections starts -->
+    <section class="container mx-auto flex flex-col justify-center items-center font-lobstertwo">
+        <h1 class="text-5xl font-bold mb-6 mt-10 travelT">Travel Merchandise</h1>
+    
+        <!-- Filter Tags -->
+        <div class="mb-6 traveltagT">
+            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2" data-filter="all">All</button>
+            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+                data-filter="bags">Bags</button>
+            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+                data-filter="jacket">Jackets</button>
+            <button class="filter-btn bg-transparent text-olive-green py-2 px-4 rounded mr-2"
+                data-filter="boots">Boots</button>
+        </div>
+    
+        <!-- Products -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-10 ">
+            <!-- product 1 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag4new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
             </div>
-            <!--Filters-->
-            <div class="flex justify-between px-[35%] pb-[5%]">
-                    <!--Filter 1-->
-                    <div class="px-[5%] font-lobstertwo font-semibold hover:text-olive-green hover:border-[2px] border-olive-green rounded-[100px] p-[2%]">
-                        <p>All</p>
+            <!-- product 2 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag1new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
                     </div>
-                    <!--Filter 2-->
-                    <div class="px-[5%] font-lobstertwo font-semibold hover:text-olive-green hover:border-[2px] border-olive-green rounded-[100px] p-[2%]">
-                        <p>Bag</p>
-                    </div>
-                    <!--Filter 3-->
-                    <div class="px-[5%] font-lobstertwo font-semibold hover:text-olive-green hover:border-[2px] border-olive-green rounded-[100px] p-[2%]">
-                        <p>Jackets</p>
-                    </div>
-                    <!--Filter 4-->
-                    <div class="px-[5%] font-lobstertwo font-semibold hover:text-olive-green hover:border-[2px] border-olive-green rounded-[100px] p-[2%]">
-                        <p>Boots</p>
-                    </div>
+                </div>
             </div>
-            <!--Products-->
-            <div>
-                
+            <!-- product 3 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag2new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8 mb-5">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 4 -->
+            <div class="product bags relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/bag3.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">bag</p>
+                    <p class="text-2xl">Travel Baggage</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 5 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk1.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 6 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk2.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 7 -->
+            <div class="product jacket relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/jk3.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">jacket</p>
+                    <p class="text-2xl">Travel Jacket</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 8 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe1.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 9 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe2.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product 10 -->
+            <div class="product boots relative bg-transparent text-white rounded-xl p-6 w-56 h-80 productsL">
+                <!-- First Div -->
+                <div class="absolute top-8 left-8 bg-white text-white rounded-3xl p-4 w-40 h-40 z-10">
+                    <img src="../media/shoe3new.png" alt="">
+                </div>
+                <!-- Second Div -->
+                <div class="absolute top-40 left-0 bg-olive-green text-white rounded-2xl p-4 w-full h-40">
+                    <p class="mt-5">boots</p>
+                    <p class="text-2xl">Travel Boots</p>
+                    <div class="flex flex-row justify-between mt-8">
+                        <p class="text-2xl text-black">$112</p>
+                        <button class="bg-olive-green-light px-3 py-1 rounded-xl"><img src="../media/cart.png" class="h-4"
+                                alt=""></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Merch ends -->
+    <!-- merchandise section ends -->
 
 
     <!-- footer starts here -->
