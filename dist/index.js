@@ -10,6 +10,7 @@ burger.addEventListener("click", () => {
   }
 });
 
+
 //pop Up Js
 let written = false;
 
@@ -80,10 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
+
   });
 });
 
 // Scroll reveal animation
+
 
 document.addEventListener("DOMContentLoaded", function () {
   ScrollReveal().reveal(
@@ -122,3 +125,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   );
 });
+
