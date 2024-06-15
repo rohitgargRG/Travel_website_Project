@@ -4,6 +4,21 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        'zoom_out':'zoom_out 1s ease .2s forwards',
+      },
+      keyframes:{
+        zoom_out:{
+          '0%' : {transform:'scale(1)',opacity:'0'},
+          '50%':{transform:'scale(1.1)'},
+          '100%':{transform:'scale(1)',opacity:'1'}
+        },
+        float_up:{
+          '0%' : {transform:'scale(1)'},
+          '50%':{transform:'scale(1.1)'},
+          '100%':{transform:'scale(1)'}
+        }
+      },
       fontFamily: {
         lobstertwo: ["Lobster Two", "sans-serif"],
         vollkorn: ["Vollkorn", "serif"],

@@ -616,12 +616,20 @@ video {
   left: 2rem;
 }
 
+.right-\[50px\] {
+  right: 50px;
+}
+
 .top-40 {
   top: 10rem;
 }
 
 .top-8 {
   top: 2rem;
+}
+
+.top-\[50px\] {
+  top: 50px;
 }
 
 .z-0 {
@@ -634,6 +642,18 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[100000\] {
+  z-index: 100000;
+}
+
+.z-\[10002\] {
+  z-index: 10002;
+}
+
+.z-\[99999\] {
+  z-index: 99999;
 }
 
 .m-4 {
@@ -851,8 +871,8 @@ video {
   height: 70%;
 }
 
-.h-\[700px\] {
-  height: 700px;
+.h-\[750px\] {
+  height: 750px;
 }
 
 .h-\[8\%\] {
@@ -861,6 +881,10 @@ video {
 
 .h-\[80\%\] {
   height: 80%;
+}
+
+.h-\[90\%\] {
+  height: 90%;
 }
 
 .h-auto {
@@ -939,6 +963,10 @@ video {
   width: 80%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -949,6 +977,30 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.animate-\[zoom_out\] {
+  animation: zoom out;
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-zoom_out {
+  animation: zoom_out 1s ease .2s forwards;
 }
 
 .cursor-pointer {
@@ -1033,6 +1085,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -1182,30 +1238,6 @@ video {
   background-image: url('/media/forest.jpg');
 }
 
-.bg-gallery1 {
-  background-image: url('/media/gallery1.jpg');
-}
-
-.bg-gallery3 {
-  background-image: url('/media/gallery3.webp');
-}
-
-.bg-gallery4 {
-  background-image: url('/media/gallery4.jpg');
-}
-
-.bg-gallery5 {
-  background-image: url('/media/gallery5.jpg');
-}
-
-.bg-gallery6 {
-  background-image: url('/media/gallery6.jpg');
-}
-
-.bg-gallery7 {
-  background-image: url('/media/gallery7.jpg');
-}
-
 .bg-goa {
   background-image: url('/media/goa.jpg');
 }
@@ -1264,6 +1296,16 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -1425,6 +1467,10 @@ video {
   font-size: 3.5rem;
 }
 
+.text-\[40px\] {
+  font-size: 40px;
+}
+
 .text-\[60px\] {
   font-size: 60px;
 }
@@ -1458,6 +1504,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .tracking-widest {
@@ -1625,6 +1675,42 @@ video {
 .filter-hover:hover {
   --tw-text-opacity: 1;
   color: rgb(97 141 61 / var(--tw-text-opacity));
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:z-\[-100\]::before {
+  content: var(--tw-content);
+  z-index: -100;
+}
+
+.before\:h-full::before {
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-full::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-slate-400::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.before\:opacity-50::before {
+  content: var(--tw-content);
+  opacity: 0.5;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .hover\:cursor-pointer:hover {

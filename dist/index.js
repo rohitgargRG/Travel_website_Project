@@ -98,9 +98,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// image gallery section
+  document.querySelectorAll('.gallery-container img').forEach(image => {
+      image.onclick = () =>{
+        document.querySelector(".gallery-popup").computedStyleMap.display = "flex";
+        document.querySelector(".gallery-popup .popup-item img").src = image.getAttribute("src");
+      }
+  })
+
+  document.querySelector(".gallery-popup i").onclick = () =>{
+    document.querySelector(".gallery-popup").computedStyleMap.display = "none";
+  }
+
+// image gallery section ends here
+
+
+
 // Scroll reveal animation
-
-
 document.addEventListener("DOMContentLoaded", function () {
   ScrollReveal().reveal(
     ".navY, .letB ,.packB,.servB,.revB,.footB, .arrows,.productsL,.serH,.cardup",
