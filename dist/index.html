@@ -28,18 +28,29 @@
         .hidden { display: none; }
     </style>
 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body class="max-w-full">
+    
     <!-- nav starts! -->
-    <section class=" bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
+    <section class="bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
 
-        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50 navY">
-            <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
-                <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5"
-                    id="burger">
+        <nav class="bg-transparent backdrop-blur-[5px] shadow-lg fixed text-center w-full md:flex md:justify-center z-50 navY">
+            <div class="flex md:justify-center md:items-center justify-between md:pt-[1px] pl-5">
+                <div class="md:absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5">
                     <p>Had Travel</p>
                 </div>
-                <ul class="font-bold text-olive-green font-lobstertwo lg:flex justify-center items-center" id="nav">
+    
+                <!-- hamburger menu -->
+                 <span class="text-3xl cursor-pointer md:hidden block pt-5 pr-5">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                 </span>
+                 <!-- ******* -->
+            
+                <ul class="md:bg-transparent overflow-hidden backdrop-blur-lg font-bold text-olive-green font-lobstertwo md:flex md:justify-center md:items-center md:static absolute w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                     <li class="m-5"><a href="#">About</a></li>
                     <li class="m-5"><a href="#">Season</a></li>
                     <li class="m-5"><a href="#">Destination</a></li>
@@ -49,10 +60,9 @@
                     <li class="m-5"><a href="#gallery">Gallery</a></li>
                     <li class="m-5"><a href="#reviews">Review</a></li>
                     <li class="m-5"><a href="#merch">Merchandise</a></li>
-
                 </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
@@ -559,7 +569,7 @@
     </section>
     <!-- Image gallery Section ends -->
 
-
+    
     
     
     <!-- review starts -->

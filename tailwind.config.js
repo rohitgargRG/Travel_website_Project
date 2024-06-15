@@ -27,6 +27,11 @@ module.exports = {
         "olive-green": "#618D3D",
         "olive-green-light": "#89ba60",
         "review-green": "#CEBA5A",
+        'glassMorphism-nav2': 'rgba(255, 255, 255, 1.1)',
+        'glassMorphism-nav': 'rgba(255, 255, 255, 0.3)',
+      },
+      backdropBlur: {
+        'lg': 'blur(10px)',
       },
 
       backgroundImage: {
