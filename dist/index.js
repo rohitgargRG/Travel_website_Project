@@ -1,14 +1,32 @@
 //Hamburger Navbar
-const burger = document.querySelector("#burger");
-const nav = document.querySelector("#nav");
+// const burger = document.querySelector("#burger");
+// const nav = document.querySelector("#nav");
 
-burger.addEventListener("click", () => {
-  if (nav.classList.contains("hidden")) {
-    nav.classList.remove("hidden");
+// burger.addEventListener("click", () => {
+//   if (nav.classList.contains("hidden")) {
+//     nav.classList.remove("hidden");
+//   } else {
+//     nav.classList.add("hidden");
+//   }
+// });
+
+// hamburger menu
+// hamburger menu
+function Menu(e) {
+  let list = document.querySelector('ul');
+  let list2 = document.querySelector('nav');
+  
+  if (e.name === "menu-outline") {
+      e.name = "close-outline";
+      list.classList.add('top-[80px]', 'opacity-100', 'z-[1]','bg-glassMorphism-nav2','backdropBlur'); // Ensure z-index is higher than other elements
+      list.classList.remove('top-[-400px]', 'opacity-0');
   } else {
-    nav.classList.add("hidden");
+      e.name = "menu-outline";
+      list.classList.remove('top-[80px]', 'opacity-100', 'z-[1]','bg-glassMorphism-nav2','backdropBlur');
+      list.classList.add('top-[-400px]', 'opacity-0');
   }
-});
+}
+
 
 
 //pop Up Js
@@ -98,9 +116,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// image gallery section
+  document.querySelectorAll('.gallery-container img').forEach(image => {
+      image.onclick = () =>{
+        document.querySelector(".gallery-popup").computedStyleMap.display = "flex";
+        document.querySelector(".gallery-popup .popup-item img").src = image.getAttribute("src");
+      }
+  })
+
+  document.querySelector(".gallery-popup i").onclick = () =>{
+    document.querySelector(".gallery-popup").computedStyleMap.display = "none";
+  }
+
+// image gallery section ends here
+
+
+
 // Scroll reveal animation
-
-
 document.addEventListener("DOMContentLoaded", function () {
   ScrollReveal().reveal(
     ".navY, .letB ,.packB,.servB,.revB,.footB, .arrows,.productsL,.serH,.cardup",

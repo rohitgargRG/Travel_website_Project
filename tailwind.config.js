@@ -4,6 +4,21 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        'zoom_out':'zoom_out 1s ease .2s forwards',
+      },
+      keyframes:{
+        zoom_out:{
+          '0%' : {transform:'scale(1)',opacity:'0'},
+          '50%':{transform:'scale(1.1)'},
+          '100%':{transform:'scale(1)',opacity:'1'}
+        },
+        float_up:{
+          '0%' : {transform:'scale(1)'},
+          '50%':{transform:'scale(1.1)'},
+          '100%':{transform:'scale(1)'}
+        }
+      },
       fontFamily: {
         lobstertwo: ["Lobster Two", "sans-serif"],
         vollkorn: ["Vollkorn", "serif"],
@@ -12,6 +27,11 @@ module.exports = {
         "olive-green": "#618D3D",
         "olive-green-light": "#89ba60",
         "review-green": "#CEBA5A",
+        'glassMorphism-nav2': 'rgba(255, 255, 255, 1.1)',
+        'glassMorphism-nav': 'rgba(255, 255, 255, 0.3)',
+      },
+      backdropBlur: {
+        'lg': 'blur(10px)',
       },
 
       backgroundImage: {

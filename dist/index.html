@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Had Travel</title>
+    <title>TripVista</title>
     <link rel="stylesheet" href="output.css">
 
     <!-- navbar fonts -->
@@ -28,18 +28,29 @@
         .hidden { display: none; }
     </style>
 
-</head>
-<body class="max-w-full">
-    <!-- nav starts! -->
-    <section class=" bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
-        <nav class="bg-glassMorphism-nav backdrop-blur-[5px] shadow-lg fixed text-center w-full flex justify-center z-50 navY">
-            <div class="flex justify-center items-center pt-[5%] lg:pt-[1px]">
-                <div class="absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5"
-                    id="burger">
-                    <p>Had Travel</p>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="max-w-full overflow-x-hidden">
+    
+    <!-- nav starts! -->
+    <section class="bg-breakSec flex items-start justify-center bg-cover bg-center min-h-screen">
+
+        <nav class="bg-transparent backdrop-blur-[5px] shadow-lg fixed text-center w-full md:flex md:justify-center z-50 navY">
+            <div class="flex md:justify-center md:items-center justify-between md:pt-[1px] pl-5">
+                <div class="md:absolute text-center text-3xl font-extrabold font-lobstertwo text-black cursor-pointer py-5">
+                    <p>TripVista</p>
                 </div>
-                <ul class="font-bold text-olive-green font-lobstertwo lg:flex justify-center items-center" id="nav">
+    
+                <!-- hamburger menu -->
+                 <span class="text-3xl cursor-pointer md:hidden block pt-5 pr-5">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                 </span>
+                 <!-- ******* -->
+            
+                <ul class="md:bg-transparent overflow-hidden backdrop-blur-lg font-bold text-olive-green font-lobstertwo md:flex md:justify-center md:items-center md:static absolute w-full left-0 md:w-auto md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                     <li class="m-5"><a href="#">About</a></li>
                     <li class="m-5"><a href="#">Season</a></li>
                     <li class="m-5"><a href="#">Destination</a></li>
@@ -49,10 +60,9 @@
                     <li class="m-5"><a href="#gallery">Gallery</a></li>
                     <li class="m-5"><a href="#reviews">Review</a></li>
                     <li class="m-5"><a href="#merch">Merchandise</a></li>
-
                 </ul>
-            </div>
-        </nav>
+        </div>
+    </nav>
     <!-- nav ends -->
 
     <!-- Break Your Experience Section starts here -->
@@ -499,42 +509,69 @@
 
     <!-- Image gallery Section starts -->
 
-    <section class="min-h-screen w-full mt-10" id="gallery">
+    <section class="min-h-screen w-full mt-10 overflow-x-hidden" id="gallery">
 
         <div class="h-[100px] imgL">
             <div class="text-4xl font-lobstertwo text-olive-green flex justify-start pl-32"><p>Our Memorials</p></div>
             <div class="text-3xl font-lobstertwo pl-32"><p>You are Cool, You are Amazing</p></div>
         </div>
-        <div class="h-[700px] flex justify-center gap-1 p-1">
-            <div class="h-full w-[40%]  p-1 ">
+
+        <!-- gallery container -->
+        <div class="gallery-container">
+        <div class="h-[750px]  flex justify-center gap-1 p-1">
+            <div class="h-full w-[40%] p-1 gap-2 ">
                 
-                <div class="imgL h-[50%] rounded-tr-3xl rounded-bl-3xl bg-gallery1 bg-cover bg-center"></div>
+                <div class="imgL h-[50%] rounded-tr-3xl rounded-bl-3xl cursor-pointer">
+                    <img src="../media/gallery1.jpg" alt="travel image" class="object-cover rounded-tr-3xl rounded-bl-3xl">
+                </div>
                 
-                <div class="imgL h-[50%] mt-2 rounded-tl-3xl rounded-br-3xl bg-gallery4 bg-cover bg-center"></div>
+                <div class="imgL h-[50%] mt-2 rounded-tl-3xl rounded-br-3xl cursor-pointer">
+                    <img src="../media/gallery4.jpg" alt="travel image" class="object-cover rounded-tl-3xl rounded-br-3xl">
+                </div>
             
             </div>
             
 
-            <div class="h-full w-[20%] p-1">
+            <div class="h-full  w-[20%] p-1 cursor-pointer">
 
-                <div class="imgR h-[30%] rounded-tl-3xl rounded-br-3xl bg-gallery3 bg-cover bg-center"></div>
+                <div class="imgR  h-[30%] rounded-tl-3xl rounded-br-3xl">
+                    <img src="../media/gallery3.webp" alt="travel image" class="object-cover h-full rounded-tl-3xl rounded-br-3xl">
+                </div>
                 
-                <div class="imgR h-[70%] mt-2 rounded-tr-3xl rounded-bl-3xl bg-gallery5 bg-cover bg-center"></div>
+                <div class="imgR h-[70%] mt-2 rounded-tr-3xl rounded-bl-3xl cursor-pointer">
+                    <img src="../media/gallery5.jpg" alt="travel image" class="object-cover h-full rounded-tl-3xl rounded-br-3xl">
+                </div>
             </div>
         </div>
 
         <div class="h-[400px] flex justify-center gap-2 mt-3">
 
-            <div class="imgL h-full w-[20%] rounded-br-3xl rounded-tl-3xl bg-gallery6 bg-cover bg-center"></div>
+            <div class="imgL  h-full w-[20%] rounded-br-3xl rounded-tl-3xl cursor-pointer">
+                <img src="../media/gallery6.jpg" alt="travel image" class="object-cover h-full rounded-tl-3xl rounded-br-3xl w-full">
+            </div>
 
-            <div class="imgR h-full w-[40%] rounded-bl-3xl rounded-tr-3xl bg-gallery7 bg-cover bg-center"></div>          
+            <div class="imgR h-full w-[40%] rounded-bl-3xl rounded-tr-3xl cursor-pointer">
+                <img src="../media/gallery7.jpg" alt="travel image" class="object-cover h-full rounded-bl-3xl rounded-tr-3xl w-full">
+            </div>          
 
         </div>
+    </div>
+     
+    <!-- popup container -->
+        <div class="gallery-popup hidden fixed w-full h-full z-[100000] before:content-[''] before:w-full before:h-full before:absolute before:bg-slate-400 before:opacity-50 before:z-[-100] ">
             
+            <i class="fa-regular fa-circle-xmark text-[40px] leading-[40px] text-black cursor-pointer absolute top-[50px] right-[50px] z-[99999]"></i>
+
+            <div class="popup-item w-full h-full overflow-hidden flex justify-center items-center">
+                <img src="../media/gallery1.jpg" alt="travel image" class="object-contain w-[90%] h-[90%] absolute opacity-0 z-[10002] animate-zoom_out">
+            </div>
+        </div>
     </section>
     <!-- Image gallery Section ends -->
 
-
+    
+    
+    
     <!-- review starts -->
 
     <section class="bg-review bg-cover bg-center mt-8" id="reviews">
@@ -927,7 +964,7 @@
                 </div>
                 <!-- copyright div -->
                 <div class="flex justify-center items-center  mb-4 footB">
-                    &#169; Had Travel 2024. All rights reserved.
+                    &#169; TripVista 2024. All rights reserved.
                 </div>
             </div>
     </footer>
