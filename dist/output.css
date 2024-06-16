@@ -1251,79 +1251,104 @@ video {
 }
 
 .bg-5_Star_black {
-  background-image: url('/media/5-stars_black.png');
+  background-image: url('/dist/media/5-stars_black.png');
 }
 
 .bg-angkor_wat {
-  background-image: url('/media/angkor.jpg');
+  background-image: url('/dist/media/angkor.jpg');
 }
 
 .bg-bali {
-  background-image: url('/media/bali3.jpg');
+  background-image: url('/dist/media/bali3.jpg');
 }
 
 .bg-bandar {
-  background-image: url('/media/bandar.jpg');
+  background-image: url('/dist/media/bandar.jpg');
 }
 
 .bg-breakSec {
-  background-image: url('/media/breakBGIMG.jpg');
+  background-image: url('/dist/media/breakBGIMG.jpg');
 }
 
 .bg-forest {
-  background-image: url('/media/forest.jpg');
+  background-image: url('/dist/media/forest.jpg');
 }
 
+.bg-gallery1 {
+  background-image: url('/dist/media/gallery1.jpg');
+}
+
+.bg-gallery3 {
+  background-image: url('/dist/media/gallery3.webp');
+}
+
+.bg-gallery4 {
+  background-image: url('/dist/media/gallery4.jpg');
+}
+
+.bg-gallery5 {
+  background-image: url('/dist/media/gallery5.jpg');
+}
+
+.bg-gallery6 {
+  background-image: url('/dist/media/gallery6.jpg');
+}
+
+.bg-gallery7 {
+  background-image: url('/dist/media/gallery7.jpg');
+}
+
+
 .bg-goa {
-  background-image: url('/media/goa.jpg');
+  background-image: url('/dist/media/goa.jpg');
 }
 
 .bg-lesGo {
-  background-image: url('/media/lesGo.jpg');
+  background-image: url('/dist/media/lesGo.jpg');
 }
 
 .bg-package1 {
-  background-image: url('/media/p1.jpg');
+  background-image: url('/dist/media/p1.jpg');
 }
 
 .bg-package2 {
-  background-image: url('/media/p_2.jpeg');
+  background-image: url('/dist/media/p_2.jpeg');
 }
 
 .bg-package3 {
-  background-image: url('/media/p3.jpg');
+  background-image: url('/dist/media/p3.jpg');
 }
 
 .bg-package4 {
-  background-image: url('/media/p4.jpg');
+  background-image: url('/dist/media/p4.jpg');
 }
 
 .bg-phuket {
-  background-image: url('/media/phuket.jpg');
+  background-image: url('/dist/media/phuket.jpg');
 }
 
 .bg-review {
-  background-image: url('/media/reviewbg2.jpg');
+  background-image: url('/dist/media/reviewbg2.jpg');
 }
 
 .bg-reviewUpper1 {
-  background-image: url('/media/review1.jpg');
+  background-image: url('/dist/media/review1.jpg');
 }
 
 .bg-reviewUpper2 {
-  background-image: url('/media/reviewUpper2.jpeg');
+  background-image: url('/dist/media/reviewUpper2.jpeg');
 }
 
 .bg-reviewUpper3 {
-  background-image: url('/media/review3.jpg');
+  background-image: url('/dist/media/review3.jpg');
 }
 
 .bg-shimla {
-  background-image: url('/media/shimla.jpg');
+  background-image: url('/dist/media/shimla.jpg');
 }
 
 .bg-trees {
-  background-image: url('/media/tree.jpg');
+  background-image: url('/dist/media/tree.jpg');
 }
 
 .bg-cover {

@@ -1,8 +1,8 @@
 # Node modules
 *node_modules/*
 
-./dist/output.css
-
+node_modules/
+package-lock.json
 # Log files
 npm-debug.log*
 yarn-debug.log*

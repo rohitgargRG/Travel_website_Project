@@ -87,8 +87,8 @@ toggleButton.addEventListener("click", () => {
   });
   isExpanded = !isExpanded;
   toggleIcon.src = isExpanded
-    ? "../media/up-arrow.jpg"
-    : "../media/down-arrow.jpg";
+    ? "media/up-arrow.jpg"
+    : "media/down-arrow.jpg";
 });
 
 // merchandise section
